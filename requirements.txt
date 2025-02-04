@@ -1,0 +1,14 @@
+mysql
+mysql-connector
+mysql-connector-python
+mysqlclient
+numpy
+openpyxl
+pandas
+requests
+SQLAlchemy
+Flask
+flask-sqlalchemy
+pymysql
+cryptography
+schedule

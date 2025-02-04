@@ -1,0 +1,9 @@
+2025-01-29 01:16:31,615 - WARNING -  * Debugger is active!
+2025-01-29 01:16:31,617 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 01:16:34,151 - INFO - 127.0.0.1 - - [29/Jan/2025 01:16:34] "GET / HTTP/1.1" 200 -
+2025-01-29 01:16:34,237 - INFO - 127.0.0.1 - - [29/Jan/2025 01:16:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:16:34,239 - INFO - 127.0.0.1 - - [29/Jan/2025 01:16:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:16:38,298 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:16:38,299 - INFO - 127.0.0.1 - - [29/Jan/2025 01:16:38] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:16:38,428 - ERROR - Error fetching total summary: 'ExchangeRate' object has no attribute 'fx_rate'
+2025-01-29 01:16:38,431 - INFO - 127.0.0.1 - - [29/Jan/2025 01:16:38] "[35m[1mGET /get_total_summary_data HTTP/1.1[0m" 500 -

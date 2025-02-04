@@ -1,0 +1,26 @@
+2025-01-29 01:24:44,840 - WARNING -  * Debugger is active!
+2025-01-29 01:24:44,843 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 01:24:52,034 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:52] "GET / HTTP/1.1" 200 -
+2025-01-29 01:24:52,209 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:52] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 01:24:52,214 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:52] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 01:24:52,779 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 01:24:57,333 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:24:57,333 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:57] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:24:57,424 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 01:24:57,425 - INFO - 127.0.0.1 - - [29/Jan/2025 01:24:57] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 01:25:12,426 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 01:25:12,440 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 01:25:12,486 - INFO - Social currencies updated successfully.
+2025-01-29 01:25:14,294 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:14] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 01:25:19,882 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:19] "GET / HTTP/1.1" 200 -
+2025-01-29 01:25:19,904 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:25:19,904 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:25:23,501 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:25:23,502 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:23] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:25:23,567 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 01:25:23,569 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:23] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 01:25:37,114 - INFO - Latest date from database: 2025-01-27
+2025-01-29 01:25:37,129 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 01:25:37,168 - INFO - Social currencies updated successfully.
+2025-01-29 01:25:37,199 - INFO - Latest data loaded successfully: {'latest_data': '2025-01-27', 'total_bet': 15136.24, 'total_win': 9530.6, 'reel_spins': 10661, 'social_spins': 5081, 'total_spins': 15742, 'rtp': 62.97, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05}
+2025-01-29 01:25:37,201 - INFO - 127.0.0.1 - - [29/Jan/2025 01:25:37] "GET /load_latest_data HTTP/1.1" 200 -

@@ -1,0 +1,10 @@
+2025-01-29 22:19:22,912 - WARNING -  * Debugger is active!
+2025-01-29 22:19:22,915 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 22:19:24,172 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:24] "GET / HTTP/1.1" 200 -
+2025-01-29 22:19:24,266 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:24] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 22:19:24,268 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 22:19:25,059 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 22:19:27,556 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 22:19:27,559 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:27] "POST /login HTTP/1.1" 200 -
+2025-01-29 22:19:27,596 - INFO - Summary fetched successfully.
+2025-01-29 22:19:27,596 - INFO - 127.0.0.1 - - [29/Jan/2025 22:19:27] "GET /get_total_summary_data HTTP/1.1" 200 -

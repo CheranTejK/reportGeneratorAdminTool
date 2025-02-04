@@ -1,0 +1,15 @@
+2025-02-04 00:18:09,119 - WARNING -  * Debugger is active!
+2025-02-04 00:18:09,122 - INFO -  * Debugger PIN: 308-186-142
+2025-02-04 00:18:10,255 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:10] "GET / HTTP/1.1" 200 -
+2025-02-04 00:18:10,358 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 00:18:10,495 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:10] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 00:18:10,928 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 00:18:14,595 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-04 00:18:14,595 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:14] "POST /login HTTP/1.1" 200 -
+2025-02-04 00:18:14,668 - INFO - No missing dates found in TotalSummaryData.
+2025-02-04 00:18:14,984 - INFO - Total summary fetched successfully: {'total_bet': 2515969.7, 'total_win': 2002956.31, 'total_spins': 5817045, 'reel_spins': 3205998, 'social_spins': 2611047, 'ggr_eur': 513013.66, 'ggr_gbp': 613594.88, 'total_players': 97101, 'rtp': 79.61, 'max_date': '2025-02-02', 'min_date': '2024-09-19'}
+2025-02-04 00:18:14,984 - INFO - Latest summary fetched successfully: {'total_bet': 15273.5, 'total_win': 19935.9, 'total_spins': 14359, 'reel_spins': 7817, 'social_spins': 6542, 'ggr_eur': -4662.49, 'ggr_gbp': -5592.61, 'total_players': 425, 'rtp': 130.53, 'max_date': '2025-02-02'}
+2025-02-04 00:18:14,984 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:14] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-04 00:18:19,935 - INFO - Fetching data for total summary calculation.
+2025-02-04 00:18:25,792 - INFO - 127.0.0.1 - - [04/Feb/2025 00:18:25] "[35m[1mGET /calculate_total_summary HTTP/1.1[0m" 500 -
+2025-02-04 00:20:18,762 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\routes\\data_routes.py', reloading

@@ -1,0 +1,79 @@
+2025-01-30 13:22:26,314 - WARNING -  * Debugger is active!
+2025-01-30 13:22:26,317 - INFO -  * Debugger PIN: 308-186-142
+2025-01-30 13:22:26,379 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:26] "GET / HTTP/1.1" 200 -
+2025-01-30 13:22:26,438 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-30 13:22:26,447 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:26] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-30 13:22:26,806 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-30 13:22:29,097 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-30 13:22:29,097 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:29] "POST /login HTTP/1.1" 200 -
+2025-01-30 13:22:29,141 - INFO - No missing dates found in TotalSummaryData.
+2025-01-30 13:22:29,417 - INFO - Total summary fetched successfully: {'total_bet': 2398164.6, 'total_win': 1902794.06, 'total_spins': 5701381, 'reel_spins': 3141893, 'social_spins': 2559488, 'ggr_eur': 495370.75, 'ggr_gbp': 592522.01, 'total_players': 94955, 'rtp': 79.34, 'max_date': '2025-01-27', 'min_date': '2024-09-19'}
+2025-01-30 13:22:29,417 - INFO - Latest summary fetched successfully: {'total_bet': 15136.2, 'total_win': 9530.6, 'total_spins': 15742, 'reel_spins': 10661, 'social_spins': 5081, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05, 'total_players': 426, 'rtp': 62.97, 'max_date': '2025-01-27'}
+2025-01-30 13:22:29,417 - INFO - 127.0.0.1 - - [30/Jan/2025 13:22:29] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-30 13:28:53,565 - DEBUG - Extracted date 2025-01-28 for file reports_TZesst_Consolidated_2025-01-28.xlsx
+2025-01-30 13:28:53,566 - DEBUG - Extracted date 2025-01-29 for file reports_TZesst_Consolidated_2025-01-29.xlsx
+2025-01-30 13:28:53,583 - DEBUG - Starting new HTTP connection (1): data.fixer.io:80
+2025-01-30 13:28:54,712 - DEBUG - http://data.fixer.io:80 "GET /api/2025-01-28?access_key=f9a3cb10586c03a09c827fcf952994c0&base=EUR HTTP/1.1" 200 None
+2025-01-30 13:28:54,712 - INFO - Exchange rates fetched successfully.
+2025-01-30 13:28:54,731 - INFO - Fetched and inserted exchange rates for 2025-01-28 from the API.
+2025-01-30 13:28:54,737 - INFO - Added social rate for currency: SSC
+2025-01-30 13:28:54,741 - INFO - Added social rate for currency: WOC
+2025-01-30 13:28:54,745 - INFO - Added social rate for currency: SC
+2025-01-30 13:28:54,747 - INFO - Added social rate for currency: SC.
+2025-01-30 13:28:54,750 - INFO - Added social rate for currency: YOH
+2025-01-30 13:28:54,752 - INFO - Added social rate for currency: GEM
+2025-01-30 13:28:54,755 - INFO - Added social rate for currency: BK.
+2025-01-30 13:28:54,758 - INFO - Added social rate for currency: GHC
+2025-01-30 13:28:54,761 - INFO - Added social rate for currency: GOC
+2025-01-30 13:28:54,764 - INFO - Added social rate for currency: VBC
+2025-01-30 13:28:54,767 - INFO - Added social rate for currency: GCC
+2025-01-30 13:28:54,769 - INFO - Added social rate for currency: GLD
+2025-01-30 13:28:54,772 - INFO - Added social rate for currency: GC
+2025-01-30 13:28:54,774 - INFO - Added social rate for currency: GC.
+2025-01-30 13:28:54,776 - INFO - Added social rate for currency: TOK
+2025-01-30 13:28:54,778 - INFO - Added social rate for currency: FTN
+2025-01-30 13:28:54,781 - INFO - Added social rate for currency: USDT
+2025-01-30 13:28:54,784 - INFO - Added social rate for currency: BT.
+2025-01-30 13:28:54,787 - INFO - Added social rate for currency: mBTC
+2025-01-30 13:28:54,790 - INFO - Added social rate for currency: FC
+2025-01-30 13:28:54,793 - INFO - Added social rate for currency: VSC
+2025-01-30 13:28:54,796 - INFO - Added social rate for currency: WOW
+2025-01-30 13:28:54,799 - INFO - Social currencies updated successfully.
+2025-01-30 13:28:55,021 - DEBUG - Starting new HTTP connection (1): data.fixer.io:80
+2025-01-30 13:28:57,339 - DEBUG - http://data.fixer.io:80 "GET /api/2025-01-29?access_key=f9a3cb10586c03a09c827fcf952994c0&base=EUR HTTP/1.1" 200 None
+2025-01-30 13:28:57,339 - INFO - Exchange rates fetched successfully.
+2025-01-30 13:28:57,350 - INFO - Fetched and inserted exchange rates for 2025-01-29 from the API.
+2025-01-30 13:28:57,355 - INFO - Added social rate for currency: SSC
+2025-01-30 13:28:57,358 - INFO - Added social rate for currency: WOC
+2025-01-30 13:28:57,360 - INFO - Added social rate for currency: SC
+2025-01-30 13:28:57,363 - INFO - Added social rate for currency: SC.
+2025-01-30 13:28:57,366 - INFO - Added social rate for currency: YOH
+2025-01-30 13:28:57,368 - INFO - Added social rate for currency: GEM
+2025-01-30 13:28:57,371 - INFO - Added social rate for currency: BK.
+2025-01-30 13:28:57,373 - INFO - Added social rate for currency: GHC
+2025-01-30 13:28:57,376 - INFO - Added social rate for currency: GOC
+2025-01-30 13:28:57,378 - INFO - Added social rate for currency: VBC
+2025-01-30 13:28:57,381 - INFO - Added social rate for currency: GCC
+2025-01-30 13:28:57,383 - INFO - Added social rate for currency: GLD
+2025-01-30 13:28:57,386 - INFO - Added social rate for currency: GC
+2025-01-30 13:28:57,388 - INFO - Added social rate for currency: GC.
+2025-01-30 13:28:57,391 - INFO - Added social rate for currency: TOK
+2025-01-30 13:28:57,393 - INFO - Added social rate for currency: FTN
+2025-01-30 13:28:57,396 - INFO - Added social rate for currency: USDT
+2025-01-30 13:28:57,398 - INFO - Added social rate for currency: BT.
+2025-01-30 13:28:57,400 - INFO - Added social rate for currency: mBTC
+2025-01-30 13:28:57,403 - INFO - Added social rate for currency: FC
+2025-01-30 13:28:57,405 - INFO - Added social rate for currency: VSC
+2025-01-30 13:28:57,406 - INFO - Added social rate for currency: WOW
+2025-01-30 13:28:57,409 - INFO - Social currencies updated successfully.
+2025-01-30 13:29:00,732 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:00] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-30 13:29:04,754 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:04] "GET / HTTP/1.1" 200 -
+2025-01-30 13:29:04,774 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-30 13:29:04,774 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-30 13:29:09,422 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-30 13:29:09,422 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:09] "POST /login HTTP/1.1" 200 -
+2025-01-30 13:29:09,441 - INFO - Missing dates to be added: [datetime.date(2025, 1, 28), datetime.date(2025, 1, 29)]
+2025-01-30 13:29:09,503 - INFO - Missing TotalSummaryData entries added successfully.
+2025-01-30 13:29:09,745 - INFO - Total summary fetched successfully: {'total_bet': 2435755.5, 'total_win': 1934563.51, 'total_spins': 5738878, 'reel_spins': 3163964, 'social_spins': 2574914, 'ggr_eur': 501192.28, 'ggr_gbp': 599472.41, 'total_players': 95660, 'rtp': 79.42, 'max_date': '2025-01-29', 'min_date': '2024-09-19'}
+2025-01-30 13:29:09,745 - INFO - Latest summary fetched successfully: {'total_bet': 12778.5, 'total_win': 9791.25, 'total_spins': 18734, 'reel_spins': 10777, 'social_spins': 7957, 'ggr_eur': 2987.29, 'ggr_gbp': 3569.04, 'total_players': 482, 'rtp': 76.62, 'max_date': '2025-01-29'}
+2025-01-30 13:29:09,747 - INFO - 127.0.0.1 - - [30/Jan/2025 13:29:09] "GET /get_total_summary_data HTTP/1.1" 200 -

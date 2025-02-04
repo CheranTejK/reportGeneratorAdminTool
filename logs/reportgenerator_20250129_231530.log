@@ -1,0 +1,39 @@
+2025-01-29 23:15:30,830 - WARNING -  * Debugger is active!
+2025-01-29 23:15:30,838 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 23:15:30,892 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:30] "GET / HTTP/1.1" 200 -
+2025-01-29 23:15:30,956 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 23:15:30,966 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 23:15:34,335 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 23:15:34,335 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:34] "POST /login HTTP/1.1" 200 -
+2025-01-29 23:15:34,377 - INFO - No missing dates found in TotalSummaryData.
+2025-01-29 23:15:34,649 - INFO - Total summary fetched successfully: {'total_bet': 2371873.4, 'total_win': 1883321.18, 'total_spins': 5666980, 'reel_spins': 3117354, 'social_spins': 2549626, 'ggr_eur': 488552.41, 'ggr_gbp': 584394.59, 'total_players': 94290, 'rtp': 79.4, 'max_date': '2025-01-25', 'min_date': '2024-09-19'}
+2025-01-29 23:15:34,649 - INFO - Latest summary fetched successfully: {'total_bet': 22547.4, 'total_win': 14416.8, 'total_spins': 21022, 'reel_spins': 13670, 'social_spins': 7352, 'ggr_eur': 8130.62, 'ggr_gbp': 9663.97, 'total_players': 496, 'rtp': 63.94, 'max_date': '2025-01-25'}
+2025-01-29 23:15:34,649 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:34] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 23:15:52,456 - DEBUG - Extracted date 2025-01-26 for file reports_TZesst_Consolidated_2025-01-26.xlsx
+2025-01-29 23:15:52,466 - INFO - Rates for 2025-01-26 already exist in the database. Returning existing rates.
+2025-01-29 23:15:52,506 - INFO - Social currencies updated successfully.
+2025-01-29 23:15:54,100 - INFO - 127.0.0.1 - - [29/Jan/2025 23:15:54] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 23:16:01,219 - INFO - 127.0.0.1 - - [29/Jan/2025 23:16:01] "GET / HTTP/1.1" 200 -
+2025-01-29 23:16:01,235 - INFO - 127.0.0.1 - - [29/Jan/2025 23:16:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 23:16:01,238 - INFO - 127.0.0.1 - - [29/Jan/2025 23:16:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 23:16:04,570 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 23:16:04,570 - INFO - 127.0.0.1 - - [29/Jan/2025 23:16:04] "POST /login HTTP/1.1" 200 -
+2025-01-29 23:16:04,597 - INFO - Missing dates to be added: [datetime.date(2025, 1, 26)]
+2025-01-29 23:16:04,626 - INFO - Missing TotalSummaryData entries added successfully.
+2025-01-29 23:16:04,868 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'total_players': 94662, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 23:16:04,868 - INFO - Latest summary fetched successfully: {'total_bet': 11155.0, 'total_win': 9942.28, 'total_spins': 18659, 'reel_spins': 13878, 'social_spins': 4781, 'ggr_eur': 1212.7, 'ggr_gbp': 1443.37, 'total_players': 513, 'rtp': 89.13, 'max_date': '2025-01-26'}
+2025-01-29 23:16:04,868 - INFO - 127.0.0.1 - - [29/Jan/2025 23:16:04] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 23:17:23,988 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 23:17:23,993 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 23:17:24,032 - INFO - Social currencies updated successfully.
+2025-01-29 23:17:25,381 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:25] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 23:17:28,905 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:28] "GET / HTTP/1.1" 200 -
+2025-01-29 23:17:28,917 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 23:17:28,920 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 23:17:31,894 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 23:17:31,894 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:31] "POST /login HTTP/1.1" 200 -
+2025-01-29 23:17:31,914 - INFO - Missing dates to be added: [datetime.date(2025, 1, 27)]
+2025-01-29 23:17:31,945 - INFO - Missing TotalSummaryData entries added successfully.
+2025-01-29 23:17:32,171 - INFO - Total summary fetched successfully: {'total_bet': 2398164.6, 'total_win': 1902794.06, 'total_spins': 5701381, 'reel_spins': 3141893, 'social_spins': 2559488, 'ggr_eur': 495370.75, 'ggr_gbp': 592522.01, 'total_players': 94955, 'rtp': 79.34, 'max_date': '2025-01-27', 'min_date': '2024-09-19'}
+2025-01-29 23:17:32,171 - INFO - Latest summary fetched successfully: {'total_bet': 15136.2, 'total_win': 9530.6, 'total_spins': 15742, 'reel_spins': 10661, 'social_spins': 5081, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05, 'total_players': 426, 'rtp': 62.97, 'max_date': '2025-01-27'}
+2025-01-29 23:17:32,171 - INFO - 127.0.0.1 - - [29/Jan/2025 23:17:32] "GET /get_total_summary_data HTTP/1.1" 200 -

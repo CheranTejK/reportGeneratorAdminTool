@@ -1,0 +1,51 @@
+2025-02-04 20:57:00,061 - WARNING -  * Debugger is active!
+2025-02-04 20:57:00,064 - INFO -  * Debugger PIN: 308-186-142
+2025-02-04 20:57:00,144 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:00] "GET / HTTP/1.1" 200 -
+2025-02-04 20:57:00,292 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:00] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 20:57:00,405 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:00] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 20:57:01,577 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 20:57:05,311 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-04 20:57:05,312 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:05] "POST /login HTTP/1.1" 200 -
+2025-02-04 20:57:05,430 - INFO - No missing dates found in TotalSummaryData.
+2025-02-04 20:57:06,074 - INFO - Total summary fetched successfully: {'total_bet': 2515969.7, 'total_win': 2002956.31, 'total_spins': 5817045, 'reel_spins': 3205998, 'social_spins': 2611047, 'ggr_eur': 513013.66, 'ggr_gbp': 613594.88, 'total_players': 97101, 'rtp': 79.61, 'max_date': '2025-02-02', 'min_date': '2024-09-19'}
+2025-02-04 20:57:06,074 - INFO - Latest summary fetched successfully: {'total_bet': 15273.5, 'total_win': 19935.9, 'total_spins': 14359, 'reel_spins': 7817, 'social_spins': 6542, 'ggr_eur': -4662.49, 'ggr_gbp': -5592.61, 'total_players': 425, 'rtp': 130.53, 'max_date': '2025-02-02'}
+2025-02-04 20:57:06,077 - INFO - 127.0.0.1 - - [04/Feb/2025 20:57:06] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-04 20:58:17,883 - DEBUG - Starting new HTTP connection (1): data.fixer.io:80
+2025-02-04 20:58:18,755 - DEBUG - http://data.fixer.io:80 "GET /api/2025-02-03?access_key=f9a3cb10586c03a09c827fcf952994c0&base=EUR HTTP/1.1" 200 None
+2025-02-04 20:58:18,756 - INFO - Exchange rates fetched successfully.
+2025-02-04 20:58:18,809 - INFO - Fetched and inserted exchange rates for 2025-02-03 from the API.
+2025-02-04 20:58:18,815 - INFO - Added social rate for currency: SSC
+2025-02-04 20:58:18,821 - INFO - Added social rate for currency: WOC
+2025-02-04 20:58:18,824 - INFO - Added social rate for currency: SC
+2025-02-04 20:58:18,826 - INFO - Added social rate for currency: SC.
+2025-02-04 20:58:18,829 - INFO - Added social rate for currency: YOH
+2025-02-04 20:58:18,833 - INFO - Added social rate for currency: GEM
+2025-02-04 20:58:18,836 - INFO - Added social rate for currency: BK.
+2025-02-04 20:58:18,839 - INFO - Added social rate for currency: GHC
+2025-02-04 20:58:18,842 - INFO - Added social rate for currency: GOC
+2025-02-04 20:58:18,845 - INFO - Added social rate for currency: VBC
+2025-02-04 20:58:18,848 - INFO - Added social rate for currency: GCC
+2025-02-04 20:58:18,851 - INFO - Added social rate for currency: GLD
+2025-02-04 20:58:18,854 - INFO - Added social rate for currency: GC
+2025-02-04 20:58:18,857 - INFO - Added social rate for currency: GC.
+2025-02-04 20:58:18,859 - INFO - Added social rate for currency: TOK
+2025-02-04 20:58:18,862 - INFO - Added social rate for currency: FTN
+2025-02-04 20:58:18,866 - INFO - Added social rate for currency: USDT
+2025-02-04 20:58:18,869 - INFO - Added social rate for currency: BT.
+2025-02-04 20:58:18,871 - INFO - Added social rate for currency: mBTC
+2025-02-04 20:58:18,874 - INFO - Added social rate for currency: FC
+2025-02-04 20:58:18,877 - INFO - Added social rate for currency: VSC
+2025-02-04 20:58:18,879 - INFO - Added social rate for currency: WOW
+2025-02-04 20:58:18,883 - INFO - Social currencies updated successfully.
+2025-02-04 20:58:21,427 - INFO - Files processed and saved successfully. Consolidated file: reports_TZesst_Consolidated_2025-02-03.xlsx
+2025-02-04 20:58:21,428 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:21] "POST /upload HTTP/1.1" 200 -
+2025-02-04 20:58:25,288 - INFO - Latest date from database: 2025-02-03
+2025-02-04 20:58:25,299 - INFO - Rates for 2025-02-03 already exist in the database. Returning existing rates.
+2025-02-04 20:58:25,336 - INFO - Social currencies updated successfully.
+2025-02-04 20:58:25,356 - INFO - Latest data loaded successfully: {'latest_data': '2025-02-03', 'total_bet': 7155.46, 'total_win': 5892.23, 'reel_spins': 6069, 'social_spins': 6607, 'total_spins': 12676, 'rtp': 82.35, 'ggr_eur': 1263.22, 'ggr_gbp': 1520.6}
+2025-02-04 20:58:25,358 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:25] "GET /load_latest_data HTTP/1.1" 200 -
+2025-02-04 20:58:33,636 - INFO - Missing dates to be added: [datetime.date(2025, 2, 3)]
+2025-02-04 20:58:33,667 - INFO - Missing TotalSummaryData entries added successfully.
+2025-02-04 20:58:33,925 - INFO - Total summary fetched successfully: {'total_bet': 2523125.16, 'total_win': 2008848.54, 'total_spins': 5829721, 'reel_spins': 3212067, 'social_spins': 2617654, 'ggr_eur': 514276.88, 'ggr_gbp': 615115.48, 'total_players': 97382, 'rtp': 79.62, 'max_date': '2025-02-03', 'min_date': '2024-09-19'}
+2025-02-04 20:58:33,925 - INFO - Latest summary fetched successfully: {'total_bet': 7155.46, 'total_win': 5892.23, 'total_spins': 12676, 'reel_spins': 6069, 'social_spins': 6607, 'ggr_eur': 1263.22, 'ggr_gbp': 1520.6, 'total_players': 407, 'rtp': 82.35, 'max_date': '2025-02-03'}
+2025-02-04 20:58:33,927 - INFO - 127.0.0.1 - - [04/Feb/2025 20:58:33] "GET /get_total_summary_data HTTP/1.1" 200 -

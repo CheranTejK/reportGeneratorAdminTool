@@ -1,0 +1,11 @@
+2025-01-29 02:09:27,231 - WARNING -  * Debugger is active!
+2025-01-29 02:09:27,234 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 02:09:27,293 - INFO - 127.0.0.1 - - [29/Jan/2025 02:09:27] "GET / HTTP/1.1" 200 -
+2025-01-29 02:09:27,348 - INFO - 127.0.0.1 - - [29/Jan/2025 02:09:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 02:09:27,359 - INFO - 127.0.0.1 - - [29/Jan/2025 02:09:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 02:09:30,347 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 02:09:30,347 - INFO - 127.0.0.1 - - [29/Jan/2025 02:09:30] "POST /login HTTP/1.1" 200 -
+2025-01-29 02:09:30,411 - INFO - Total summary fetched successfully: {'total_bet': 2398164.6, 'total_win': 1902794.06, 'total_spins': 5701381, 'reel_spins': 3141893, 'social_spins': 2559488, 'ggr_eur': 495370.75, 'ggr_gbp': 592522.01, 'rtp': 79.34, 'max_date': '2025-01-27', 'min_date': '2024-09-19'}
+2025-01-29 02:09:30,411 - INFO - Latest summary fetched successfully: {'total_bet': 15136.2, 'total_win': 9530.6, 'total_spins': 15742, 'reel_spins': 10661, 'social_spins': 5081, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05, 'rtp': 62.97, 'max_date': '2025-01-27'}
+2025-01-29 02:09:30,411 - INFO - 127.0.0.1 - - [29/Jan/2025 02:09:30] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 02:10:57,236 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

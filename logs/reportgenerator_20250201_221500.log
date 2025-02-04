@@ -1,0 +1,18 @@
+2025-02-01 22:15:00,901 - WARNING -  * Debugger is active!
+2025-02-01 22:15:00,904 - INFO -  * Debugger PIN: 308-186-142
+2025-02-01 22:16:08,193 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:08] "GET / HTTP/1.1" 200 -
+2025-02-01 22:16:08,367 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-01 22:16:08,369 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:08] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 22:16:12,044 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-01 22:16:12,044 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:12] "POST /login HTTP/1.1" 200 -
+2025-02-01 22:16:12,070 - INFO - No missing dates found in TotalSummaryData.
+2025-02-01 22:16:12,322 - INFO - Total summary fetched successfully: {'total_bet': 2454811.0, 'total_win': 1949054.51, 'total_spins': 5761864, 'reel_spins': 3175132, 'social_spins': 2586732, 'ggr_eur': 505756.84, 'ggr_gbp': 604926.55, 'total_players': 96085, 'rtp': 79.4, 'max_date': '2025-01-30', 'min_date': '2024-09-19'}
+2025-02-01 22:16:12,338 - INFO - Latest summary fetched successfully: {'total_bet': 19055.5, 'total_win': 14491.0, 'total_spins': 22986, 'reel_spins': 11168, 'social_spins': 11818, 'ggr_eur': 4564.57, 'ggr_gbp': 5454.16, 'total_players': 614, 'rtp': 76.05, 'max_date': '2025-01-30'}
+2025-02-01 22:16:12,338 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:12] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-01 22:16:41,890 - DEBUG - Extracted date 2025-01-31 for file reports_TZesst_Dublin-Main_2025-01-31.xlsx
+2025-02-01 22:16:41,890 - DEBUG - Extracted date 2025-01-31 for file reports_TZesst_Subset_2025-01-31.xlsx
+2025-02-01 22:16:41,893 - DEBUG - Extracted date 2025-01-31 for file reports_TZesst_Taiwan_2025-01-31.xlsx
+2025-02-01 22:16:41,904 - INFO - Rates for 2025-01-31 already exist in the database. Returning existing rates.
+2025-02-01 22:16:41,939 - INFO - Social currencies updated successfully.
+2025-02-01 22:16:44,357 - INFO - 127.0.0.1 - - [01/Feb/2025 22:16:44] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-02-01 22:17:13,383 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

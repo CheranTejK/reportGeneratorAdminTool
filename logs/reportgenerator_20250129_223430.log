@@ -1,0 +1,25 @@
+2025-01-29 22:34:30,367 - WARNING -  * Debugger is active!
+2025-01-29 22:34:30,370 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 22:34:31,816 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:31] "GET / HTTP/1.1" 200 -
+2025-01-29 22:34:31,884 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:31] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 22:34:31,891 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:31] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 22:34:32,321 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 22:34:35,005 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 22:34:35,006 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:35] "POST /login HTTP/1.1" 200 -
+2025-01-29 22:34:35,239 - INFO - Summary fetched successfully.
+2025-01-29 22:34:35,241 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:35] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 22:34:49,852 - DEBUG - Extracted date 2025-01-26 for file reports_TZesst_Consolidated_2025-01-26.xlsx
+2025-01-29 22:34:49,853 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 22:34:49,864 - INFO - Rates for 2025-01-26 already exist in the database. Returning existing rates.
+2025-01-29 22:34:49,903 - INFO - Social currencies updated successfully.
+2025-01-29 22:34:50,123 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 22:34:50,154 - INFO - Social currencies updated successfully.
+2025-01-29 22:34:53,206 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:53] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 22:34:56,284 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:56] "GET / HTTP/1.1" 200 -
+2025-01-29 22:34:56,303 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 22:34:56,304 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 22:34:59,932 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 22:34:59,932 - INFO - 127.0.0.1 - - [29/Jan/2025 22:34:59] "POST /login HTTP/1.1" 200 -
+2025-01-29 22:35:00,229 - INFO - Summary fetched successfully.
+2025-01-29 22:35:00,232 - INFO - 127.0.0.1 - - [29/Jan/2025 22:35:00] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 22:38:48,923 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

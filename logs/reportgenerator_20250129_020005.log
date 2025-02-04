@@ -1,0 +1,23 @@
+2025-01-29 02:00:05,362 - WARNING -  * Debugger is active!
+2025-01-29 02:00:05,365 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 02:00:14,480 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:14] "GET / HTTP/1.1" 200 -
+2025-01-29 02:00:14,665 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 02:00:14,665 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:14] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 02:00:14,977 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 02:00:18,217 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 02:00:18,217 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:18] "POST /login HTTP/1.1" 200 -
+2025-01-29 02:00:18,291 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 02:00:18,291 - INFO - Latest summary fetched successfully: {'total_bet': 11155.0, 'total_win': 9942.28, 'total_spins': 18659, 'reel_spins': 13878, 'social_spins': 4781, 'ggr_eur': 1212.7, 'ggr_gbp': 1443.37, 'rtp': 89.13, 'max_date': '2025-01-26'}
+2025-01-29 02:00:18,291 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:18] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 02:00:29,102 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 02:00:29,109 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 02:00:29,143 - INFO - Social currencies updated successfully.
+2025-01-29 02:00:30,787 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:30] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 02:00:36,386 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:36] "GET / HTTP/1.1" 200 -
+2025-01-29 02:00:36,404 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 02:00:36,405 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 02:00:40,607 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 02:00:40,607 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:40] "POST /login HTTP/1.1" 200 -
+2025-01-29 02:00:40,678 - INFO - Total summary fetched successfully: {'total_bet': 2398164.64, 'total_win': 1902794.06, 'total_spins': 5701381, 'reel_spins': 3141893, 'social_spins': 2559488, 'ggr_eur': 495370.75, 'ggr_gbp': 592522.01, 'rtp': 79.34, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 02:00:40,679 - INFO - Latest summary fetched successfully: {'total_bet': 15136.24, 'total_win': 9530.6, 'total_spins': 15742, 'reel_spins': 10661, 'social_spins': 5081, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05, 'rtp': 62.97, 'max_date': '2025-01-27'}
+2025-01-29 02:00:40,681 - INFO - 127.0.0.1 - - [29/Jan/2025 02:00:40] "GET /get_total_summary_data HTTP/1.1" 200 -

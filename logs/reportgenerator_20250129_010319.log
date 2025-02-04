@@ -1,0 +1,11 @@
+2025-01-29 01:03:19,359 - WARNING -  * Debugger is active!
+2025-01-29 01:03:19,362 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 01:03:19,421 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:19] "GET / HTTP/1.1" 200 -
+2025-01-29 01:03:20,128 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:20] "GET / HTTP/1.1" 200 -
+2025-01-29 01:03:20,221 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:03:20,223 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:03:25,146 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:03:25,147 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:25] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:03:25,264 - ERROR - Error fetching total summary: 'ConsolidatedData' object has no attribute 'bet_amount'
+2025-01-29 01:03:25,266 - INFO - 127.0.0.1 - - [29/Jan/2025 01:03:25] "[35m[1mGET /get_total_summary_data HTTP/1.1[0m" 500 -
+2025-01-29 01:08:17,272 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

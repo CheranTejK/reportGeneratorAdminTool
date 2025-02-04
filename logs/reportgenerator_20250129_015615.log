@@ -1,0 +1,11 @@
+2025-01-29 01:56:15,529 - WARNING -  * Debugger is active!
+2025-01-29 01:56:15,531 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 01:56:17,199 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:17] "GET / HTTP/1.1" 200 -
+2025-01-29 01:56:17,290 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:17] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 01:56:17,291 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 01:56:17,857 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 01:56:20,960 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:56:20,960 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:20] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:56:21,101 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 01:56:21,101 - INFO - 127.0.0.1 - - [29/Jan/2025 01:56:21] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 01:58:49,142 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

@@ -1,0 +1,24 @@
+2025-01-29 22:21:02,319 - WARNING -  * Debugger is active!
+2025-01-29 22:21:02,322 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 22:21:02,727 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:02] "GET / HTTP/1.1" 200 -
+2025-01-29 22:21:02,788 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 22:21:02,800 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 22:21:10,113 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 22:21:10,115 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:10] "POST /login HTTP/1.1" 200 -
+2025-01-29 22:21:10,153 - INFO - Summary fetched successfully.
+2025-01-29 22:21:10,169 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:10] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 22:21:26,945 - DEBUG - Extracted date 2025-01-26 for file reports_TZesst_Consolidated_2025-01-26.xlsx
+2025-01-29 22:21:26,946 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 22:21:26,962 - INFO - Rates for 2025-01-26 already exist in the database. Returning existing rates.
+2025-01-29 22:21:27,004 - INFO - Social currencies updated successfully.
+2025-01-29 22:21:27,253 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 22:21:27,284 - INFO - Social currencies updated successfully.
+2025-01-29 22:21:30,406 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:30] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 22:21:38,848 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:38] "GET / HTTP/1.1" 200 -
+2025-01-29 22:21:38,869 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 22:21:38,870 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 22:21:41,956 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 22:21:41,956 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:41] "POST /login HTTP/1.1" 200 -
+2025-01-29 22:21:42,015 - INFO - Summary fetched successfully.
+2025-01-29 22:21:42,015 - INFO - 127.0.0.1 - - [29/Jan/2025 22:21:42] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 22:29:24,265 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

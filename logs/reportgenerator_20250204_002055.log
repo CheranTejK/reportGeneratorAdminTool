@@ -1,0 +1,14 @@
+2025-02-04 00:20:55,150 - WARNING -  * Debugger is active!
+2025-02-04 00:20:55,153 - INFO -  * Debugger PIN: 308-186-142
+2025-02-04 00:20:55,187 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:55] "GET / HTTP/1.1" 200 -
+2025-02-04 00:20:55,251 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-04 00:20:55,258 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:55] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-04 00:20:55,634 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 00:20:59,103 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-04 00:20:59,103 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:59] "POST /login HTTP/1.1" 200 -
+2025-02-04 00:20:59,150 - INFO - No missing dates found in TotalSummaryData.
+2025-02-04 00:20:59,452 - INFO - Total summary fetched successfully: {'total_bet': 2515969.7, 'total_win': 2002956.31, 'total_spins': 5817045, 'reel_spins': 3205998, 'social_spins': 2611047, 'ggr_eur': 513013.66, 'ggr_gbp': 613594.88, 'total_players': 97101, 'rtp': 79.61, 'max_date': '2025-02-02', 'min_date': '2024-09-19'}
+2025-02-04 00:20:59,452 - INFO - Latest summary fetched successfully: {'total_bet': 15273.5, 'total_win': 19935.9, 'total_spins': 14359, 'reel_spins': 7817, 'social_spins': 6542, 'ggr_eur': -4662.49, 'ggr_gbp': -5592.61, 'total_players': 425, 'rtp': 130.53, 'max_date': '2025-02-02'}
+2025-02-04 00:20:59,452 - INFO - 127.0.0.1 - - [04/Feb/2025 00:20:59] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-04 00:21:01,091 - INFO - Fetching data for total summary calculation.
+2025-02-04 00:21:06,811 - INFO - 127.0.0.1 - - [04/Feb/2025 00:21:06] "[35m[1mGET /calculate_total_summary HTTP/1.1[0m" 500 -

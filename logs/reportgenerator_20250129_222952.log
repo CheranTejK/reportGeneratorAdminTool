@@ -1,0 +1,6 @@
+2025-01-29 22:29:52,969 - WARNING -  * Debugger is active!
+2025-01-29 22:29:52,972 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 22:30:00,116 - INFO - 127.0.0.1 - - [29/Jan/2025 22:30:00] "GET / HTTP/1.1" 200 -
+2025-01-29 22:30:00,227 - INFO - 127.0.0.1 - - [29/Jan/2025 22:30:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 22:30:00,247 - INFO - 127.0.0.1 - - [29/Jan/2025 22:30:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 22:30:57,229 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

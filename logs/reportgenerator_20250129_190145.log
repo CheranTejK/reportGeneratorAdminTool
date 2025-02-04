@@ -1,0 +1,23 @@
+2025-01-29 19:01:45,759 - WARNING -  * Debugger is active!
+2025-01-29 19:01:45,762 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 19:01:46,100 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:46] "GET / HTTP/1.1" 200 -
+2025-01-29 19:01:46,187 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:46] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-29 19:01:46,187 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:46] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-01-29 19:01:46,748 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-29 19:01:49,955 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 19:01:49,955 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:49] "POST /login HTTP/1.1" 200 -
+2025-01-29 19:01:50,311 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'total_players': 94662, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 19:01:50,311 - INFO - Latest summary fetched successfully: {'total_bet': 11155.0, 'total_win': 9942.28, 'total_spins': 18659, 'reel_spins': 13878, 'social_spins': 4781, 'ggr_eur': 1212.7, 'ggr_gbp': 1443.37, 'total_players': 513, 'rtp': 89.13, 'max_date': '2025-01-26'}
+2025-01-29 19:01:50,315 - INFO - 127.0.0.1 - - [29/Jan/2025 19:01:50] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 19:02:08,408 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 19:02:08,414 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 19:02:08,444 - INFO - Social currencies updated successfully.
+2025-01-29 19:02:10,220 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:10] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 19:02:15,780 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:15] "GET / HTTP/1.1" 200 -
+2025-01-29 19:02:15,802 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 19:02:15,803 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 19:02:19,085 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 19:02:19,085 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:19] "POST /login HTTP/1.1" 200 -
+2025-01-29 19:02:19,363 - ERROR - Error fetching total summary: 'total_players' is an invalid keyword argument for TotalSummaryData
+2025-01-29 19:02:19,363 - INFO - 127.0.0.1 - - [29/Jan/2025 19:02:19] "[35m[1mGET /get_total_summary_data HTTP/1.1[0m" 500 -
+2025-01-29 19:13:35,931 - INFO -  * Detected change in 'C:\\projects\\ReportGeneratorTool\\src\\services\\data_service.py', reloading

@@ -1,0 +1,27 @@
+2025-01-29 01:54:25,176 - WARNING -  * Debugger is active!
+2025-01-29 01:54:25,180 - INFO -  * Debugger PIN: 308-186-142
+2025-01-29 01:54:32,817 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:32] "GET / HTTP/1.1" 200 -
+2025-01-29 01:54:32,991 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:54:32,998 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:54:35,337 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:54:35,337 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:35] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:54:35,430 - INFO - Total summary fetched successfully: {'total_bet': 2383028.4, 'total_win': 1893263.46, 'total_spins': 5685639, 'reel_spins': 3131232, 'social_spins': 2554407, 'ggr_eur': 489765.11, 'ggr_gbp': 585837.96, 'rtp': 79.45, 'max_date': '2025-01-26', 'min_date': '2024-09-19'}
+2025-01-29 01:54:35,430 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:35] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-01-29 01:54:49,538 - DEBUG - Extracted date 2025-01-27 for file reports_TZesst_Consolidated_2025-01-27.xlsx
+2025-01-29 01:54:49,543 - INFO - Rates for 2025-01-27 already exist in the database. Returning existing rates.
+2025-01-29 01:54:49,573 - INFO - Social currencies updated successfully.
+2025-01-29 01:54:50,630 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:50] "POST /generate_all_reports HTTP/1.1" 200 -
+2025-01-29 01:54:59,376 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:59] "GET / HTTP/1.1" 200 -
+2025-01-29 01:54:59,392 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:54:59,395 - INFO - 127.0.0.1 - - [29/Jan/2025 01:54:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:55:02,231 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:55:02,231 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:02] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:55:02,243 - ERROR - Error fetching total summary: 'NoneType' object has no attribute 'date'
+2025-01-29 01:55:02,244 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:02] "[35m[1mGET /get_total_summary_data HTTP/1.1[0m" 500 -
+2025-01-29 01:55:31,453 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:31] "GET / HTTP/1.1" 200 -
+2025-01-29 01:55:31,475 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-29 01:55:31,475 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-01-29 01:55:34,401 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-01-29 01:55:34,401 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:34] "POST /login HTTP/1.1" 200 -
+2025-01-29 01:55:34,420 - ERROR - Error fetching total summary: 'NoneType' object has no attribute 'date'
+2025-01-29 01:55:34,422 - INFO - 127.0.0.1 - - [29/Jan/2025 01:55:34] "[35m[1mGET /get_total_summary_data HTTP/1.1[0m" 500 -

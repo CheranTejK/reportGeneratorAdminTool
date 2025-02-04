@@ -1,0 +1,555 @@
+2025-02-01 23:22:43,155 - WARNING -  * Debugger is active!
+2025-02-01 23:22:43,158 - INFO -  * Debugger PIN: 308-186-142
+2025-02-01 23:22:43,222 - INFO - 127.0.0.1 - - [01/Feb/2025 23:22:43] "GET / HTTP/1.1" 200 -
+2025-02-01 23:22:43,310 - INFO - 127.0.0.1 - - [01/Feb/2025 23:22:43] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 23:22:43,311 - INFO - 127.0.0.1 - - [01/Feb/2025 23:22:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-02-01 23:22:46,670 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-01 23:22:46,670 - INFO - 127.0.0.1 - - [01/Feb/2025 23:22:46] "POST /login HTTP/1.1" 200 -
+2025-02-01 23:22:46,721 - INFO - No missing dates found in TotalSummaryData.
+2025-02-01 23:22:47,032 - INFO - Total summary fetched successfully: {'total_bet': 2475609.5, 'total_win': 1962236.11, 'total_spins': 5784825, 'reel_spins': 3188028, 'social_spins': 2596797, 'ggr_eur': 513373.7, 'ggr_gbp': 614042.1, 'total_players': 96509, 'rtp': 79.26, 'max_date': '2025-01-31', 'min_date': '2024-09-19'}
+2025-02-01 23:22:47,032 - INFO - Latest summary fetched successfully: {'total_bet': 20798.5, 'total_win': 13181.6, 'total_spins': 22961, 'reel_spins': 12896, 'social_spins': 10065, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55, 'total_players': 594, 'rtp': 63.38, 'max_date': '2025-01-31'}
+2025-02-01 23:22:47,034 - INFO - 127.0.0.1 - - [01/Feb/2025 23:22:47] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-01 23:23:06,278 - INFO - Fetching data for total summary calculation.
+2025-02-01 23:23:13,840 - INFO - Aggregating and processing total summary for each date.
+2025-02-01 23:23:13,840 - DEBUG - Calculating RTP and GGR for date: 2024-09-19
+2025-02-01 23:23:13,840 - INFO - Date: 2024-09-19, Total GGR EUR: 31041.74595357987, Exchange Rate (GBP): 1.19002, Total GGR GBP: 36940.29851967912
+2025-02-01 23:23:13,847 - INFO - Already there is an existing record for date: 2024-09-19
+2025-02-01 23:23:13,847 - INFO - Total summary calculated successfully for 2024-09-19: {'total_bet': 123947.37, 'total_win': 92905.62, 'total_spins': 298876, 'social_spins': 63072, 'reel_spins': 235804, 'rtp': 74.96, 'ggr_eur': 31041.75, 'ggr_gbp': 36940.3}
+2025-02-01 23:23:13,847 - DEBUG - Calculating RTP and GGR for date: 2024-09-20
+2025-02-01 23:23:13,847 - INFO - Date: 2024-09-20, Total GGR EUR: 32741.755403726318, Exchange Rate (GBP): 1.19174, Total GGR GBP: 39019.6595848368
+2025-02-01 23:23:13,854 - INFO - Already there is an existing record for date: 2024-09-20
+2025-02-01 23:23:13,854 - INFO - Total summary calculated successfully for 2024-09-20: {'total_bet': 135706.06, 'total_win': 102964.3, 'total_spins': 326448, 'social_spins': 102929, 'reel_spins': 223519, 'rtp': 75.87, 'ggr_eur': 32741.76, 'ggr_gbp': 39019.66}
+2025-02-01 23:23:13,856 - DEBUG - Calculating RTP and GGR for date: 2024-09-21
+2025-02-01 23:23:13,856 - INFO - Date: 2024-09-21, Total GGR EUR: 18740.005889827502, Exchange Rate (GBP): 1.19174, Total GGR GBP: 22333.21461914303
+2025-02-01 23:23:13,856 - INFO - Already there is an existing record for date: 2024-09-21
+2025-02-01 23:23:13,856 - INFO - Total summary calculated successfully for 2024-09-21: {'total_bet': 120253.66, 'total_win': 101513.65, 'total_spins': 311973, 'social_spins': 96564, 'reel_spins': 215409, 'rtp': 84.42, 'ggr_eur': 18740.01, 'ggr_gbp': 22333.21}
+2025-02-01 23:23:13,856 - DEBUG - Calculating RTP and GGR for date: 2024-09-22
+2025-02-01 23:23:13,861 - INFO - Date: 2024-09-22, Total GGR EUR: 20361.07867641085, Exchange Rate (GBP): 1.19292, Total GGR GBP: 24289.13797466403
+2025-02-01 23:23:13,863 - INFO - Already there is an existing record for date: 2024-09-22
+2025-02-01 23:23:13,863 - INFO - Total summary calculated successfully for 2024-09-22: {'total_bet': 88338.82, 'total_win': 67977.74, 'total_spins': 242443, 'social_spins': 79064, 'reel_spins': 163379, 'rtp': 76.95, 'ggr_eur': 20361.08, 'ggr_gbp': 24289.14}
+2025-02-01 23:23:13,863 - DEBUG - Calculating RTP and GGR for date: 2024-09-23
+2025-02-01 23:23:13,863 - INFO - Date: 2024-09-23, Total GGR EUR: 13192.286256331237, Exchange Rate (GBP): 1.20142, Total GGR GBP: 15849.476554081475
+2025-02-01 23:23:13,868 - INFO - Already there is an existing record for date: 2024-09-23
+2025-02-01 23:23:13,868 - INFO - Total summary calculated successfully for 2024-09-23: {'total_bet': 85432.04, 'total_win': 72239.75, 'total_spins': 210185, 'social_spins': 72603, 'reel_spins': 137582, 'rtp': 84.56, 'ggr_eur': 13192.29, 'ggr_gbp': 15849.48}
+2025-02-01 23:23:13,868 - DEBUG - Calculating RTP and GGR for date: 2024-09-24
+2025-02-01 23:23:13,868 - INFO - Date: 2024-09-24, Total GGR EUR: 11485.634383010452, Exchange Rate (GBP): 1.19977, Total GGR GBP: 13780.119563704451
+2025-02-01 23:23:13,869 - INFO - Already there is an existing record for date: 2024-09-24
+2025-02-01 23:23:13,869 - INFO - Total summary calculated successfully for 2024-09-24: {'total_bet': 60550.95, 'total_win': 49065.31, 'total_spins': 159402, 'social_spins': 54107, 'reel_spins': 105295, 'rtp': 81.03, 'ggr_eur': 11485.63, 'ggr_gbp': 13780.12}
+2025-02-01 23:23:13,869 - DEBUG - Calculating RTP and GGR for date: 2024-09-25
+2025-02-01 23:23:13,869 - INFO - Date: 2024-09-25, Total GGR EUR: 9866.176068679928, Exchange Rate (GBP): 1.19628, Total GGR GBP: 11802.709107440425
+2025-02-01 23:23:13,875 - INFO - Already there is an existing record for date: 2024-09-25
+2025-02-01 23:23:13,876 - INFO - Total summary calculated successfully for 2024-09-25: {'total_bet': 38365.49, 'total_win': 28499.31, 'total_spins': 109547, 'social_spins': 39948, 'reel_spins': 69599, 'rtp': 74.28, 'ggr_eur': 9866.18, 'ggr_gbp': 11802.71}
+2025-02-01 23:23:13,876 - DEBUG - Calculating RTP and GGR for date: 2024-09-26
+2025-02-01 23:23:13,876 - INFO - Date: 2024-09-26, Total GGR EUR: 5529.3177631798535, Exchange Rate (GBP): 1.19984, Total GGR GBP: 6634.296624973716
+2025-02-01 23:23:13,876 - INFO - Already there is an existing record for date: 2024-09-26
+2025-02-01 23:23:13,876 - INFO - Total summary calculated successfully for 2024-09-26: {'total_bet': 31814.12, 'total_win': 26284.81, 'total_spins': 81029, 'social_spins': 39622, 'reel_spins': 41407, 'rtp': 82.62, 'ggr_eur': 5529.32, 'ggr_gbp': 6634.3}
+2025-02-01 23:23:13,876 - DEBUG - Calculating RTP and GGR for date: 2024-09-27
+2025-02-01 23:23:13,876 - INFO - Date: 2024-09-27, Total GGR EUR: 4447.3340909699, Exchange Rate (GBP): 1.19715, Total GGR GBP: 5324.1260070046155
+2025-02-01 23:23:13,882 - INFO - Already there is an existing record for date: 2024-09-27
+2025-02-01 23:23:13,882 - INFO - Total summary calculated successfully for 2024-09-27: {'total_bet': 23506.28, 'total_win': 19058.95, 'total_spins': 76058, 'social_spins': 40116, 'reel_spins': 35942, 'rtp': 81.08, 'ggr_eur': 4447.33, 'ggr_gbp': 5324.13}
+2025-02-01 23:23:13,882 - DEBUG - Calculating RTP and GGR for date: 2024-09-28
+2025-02-01 23:23:13,882 - INFO - Date: 2024-09-28, Total GGR EUR: 4765.956609149991, Exchange Rate (GBP): 1.19724, Total GGR GBP: 5705.993890738736
+2025-02-01 23:23:13,889 - INFO - Already there is an existing record for date: 2024-09-28
+2025-02-01 23:23:13,890 - INFO - Total summary calculated successfully for 2024-09-28: {'total_bet': 22216.16, 'total_win': 17450.21, 'total_spins': 69723, 'social_spins': 35001, 'reel_spins': 34722, 'rtp': 78.55, 'ggr_eur': 4765.96, 'ggr_gbp': 5705.99}
+2025-02-01 23:23:13,890 - DEBUG - Calculating RTP and GGR for date: 2024-09-29
+2025-02-01 23:23:13,890 - INFO - Date: 2024-09-29, Total GGR EUR: 6113.436598079828, Exchange Rate (GBP): 1.19816, Total GGR GBP: 7324.875194355326
+2025-02-01 23:23:13,890 - INFO - Already there is an existing record for date: 2024-09-29
+2025-02-01 23:23:13,890 - INFO - Total summary calculated successfully for 2024-09-29: {'total_bet': 28496.99, 'total_win': 22383.55, 'total_spins': 65278, 'social_spins': 33245, 'reel_spins': 32033, 'rtp': 78.55, 'ggr_eur': 6113.44, 'ggr_gbp': 7324.88}
+2025-02-01 23:23:13,890 - DEBUG - Calculating RTP and GGR for date: 2024-09-30
+2025-02-01 23:23:13,890 - INFO - Date: 2024-09-30, Total GGR EUR: 7364.24959896988, Exchange Rate (GBP): 1.20107, Total GGR GBP: 8844.979265834754
+2025-02-01 23:23:13,897 - INFO - Already there is an existing record for date: 2024-09-30
+2025-02-01 23:23:13,897 - INFO - Total summary calculated successfully for 2024-09-30: {'total_bet': 26427.27, 'total_win': 19063.02, 'total_spins': 67808, 'social_spins': 31181, 'reel_spins': 36627, 'rtp': 72.13, 'ggr_eur': 7364.25, 'ggr_gbp': 8844.98}
+2025-02-01 23:23:13,897 - DEBUG - Calculating RTP and GGR for date: 2024-10-01
+2025-02-01 23:23:13,897 - INFO - Date: 2024-10-01, Total GGR EUR: 4304.849652109968, Exchange Rate (GBP): 1.19964, Total GGR GBP: 5164.269836657202
+2025-02-01 23:23:13,897 - INFO - Already there is an existing record for date: 2024-10-01
+2025-02-01 23:23:13,897 - INFO - Total summary calculated successfully for 2024-10-01: {'total_bet': 14322.55, 'total_win': 10017.7, 'total_spins': 52639, 'social_spins': 27833, 'reel_spins': 24806, 'rtp': 69.94, 'ggr_eur': 4304.85, 'ggr_gbp': 5164.27}
+2025-02-01 23:23:13,897 - DEBUG - Calculating RTP and GGR for date: 2024-10-02
+2025-02-01 23:23:13,902 - INFO - Date: 2024-10-02, Total GGR EUR: 1144.0955574709878, Exchange Rate (GBP): 1.20077, Total GGR GBP: 1373.795622544438
+2025-02-01 23:23:13,905 - INFO - Already there is an existing record for date: 2024-10-02
+2025-02-01 23:23:13,905 - INFO - Total summary calculated successfully for 2024-10-02: {'total_bet': 16494.42, 'total_win': 15350.33, 'total_spins': 48553, 'social_spins': 32054, 'reel_spins': 16499, 'rtp': 93.06, 'ggr_eur': 1144.1, 'ggr_gbp': 1373.8}
+2025-02-01 23:23:13,905 - DEBUG - Calculating RTP and GGR for date: 2024-10-03
+2025-02-01 23:23:13,905 - INFO - Date: 2024-10-03, Total GGR EUR: 2308.3905023400002, Exchange Rate (GBP): 1.18983, Total GGR GBP: 2746.592271399202
+2025-02-01 23:23:13,909 - INFO - Already there is an existing record for date: 2024-10-03
+2025-02-01 23:23:13,909 - INFO - Total summary calculated successfully for 2024-10-03: {'total_bet': 11134.22, 'total_win': 8825.82, 'total_spins': 41452, 'social_spins': 24331, 'reel_spins': 17121, 'rtp': 79.27, 'ggr_eur': 2308.39, 'ggr_gbp': 2746.59}
+2025-02-01 23:23:13,909 - DEBUG - Calculating RTP and GGR for date: 2024-10-04
+2025-02-01 23:23:13,909 - INFO - Date: 2024-10-04, Total GGR EUR: 2663.077036299983, Exchange Rate (GBP): 1.19517, Total GGR GBP: 3182.8297814746506
+2025-02-01 23:23:13,914 - INFO - Already there is an existing record for date: 2024-10-04
+2025-02-01 23:23:13,914 - INFO - Total summary calculated successfully for 2024-10-04: {'total_bet': 14999.02, 'total_win': 12335.94, 'total_spins': 39770, 'social_spins': 19016, 'reel_spins': 20754, 'rtp': 82.24, 'ggr_eur': 2663.08, 'ggr_gbp': 3182.83}
+2025-02-01 23:23:13,914 - DEBUG - Calculating RTP and GGR for date: 2024-10-05
+2025-02-01 23:23:13,914 - INFO - Date: 2024-10-05, Total GGR EUR: 3887.4962904000113, Exchange Rate (GBP): 1.19485, Total GGR GBP: 4644.974942584453
+2025-02-01 23:23:13,918 - INFO - Already there is an existing record for date: 2024-10-05
+2025-02-01 23:23:13,918 - INFO - Total summary calculated successfully for 2024-10-05: {'total_bet': 12065.24, 'total_win': 8177.75, 'total_spins': 35551, 'social_spins': 20272, 'reel_spins': 15279, 'rtp': 67.78, 'ggr_eur': 3887.5, 'ggr_gbp': 4644.97}
+2025-02-01 23:23:13,918 - DEBUG - Calculating RTP and GGR for date: 2024-10-06
+2025-02-01 23:23:13,918 - INFO - Date: 2024-10-06, Total GGR EUR: 819.7672318600053, Exchange Rate (GBP): 1.19609, Total GGR GBP: 980.5153883554337
+2025-02-01 23:23:13,918 - INFO - Already there is an existing record for date: 2024-10-06
+2025-02-01 23:23:13,918 - INFO - Total summary calculated successfully for 2024-10-06: {'total_bet': 13784.53, 'total_win': 12964.77, 'total_spins': 36392, 'social_spins': 17671, 'reel_spins': 18721, 'rtp': 94.05, 'ggr_eur': 819.77, 'ggr_gbp': 980.52}
+2025-02-01 23:23:13,918 - DEBUG - Calculating RTP and GGR for date: 2024-10-07
+2025-02-01 23:23:13,918 - INFO - Date: 2024-10-07, Total GGR EUR: 3134.838584810017, Exchange Rate (GBP): 1.1922, Total GGR GBP: 3737.354560810502
+2025-02-01 23:23:13,923 - INFO - Already there is an existing record for date: 2024-10-07
+2025-02-01 23:23:13,923 - INFO - Total summary calculated successfully for 2024-10-07: {'total_bet': 12462.24, 'total_win': 9327.4, 'total_spins': 36198, 'social_spins': 20524, 'reel_spins': 15674, 'rtp': 74.85, 'ggr_eur': 3134.84, 'ggr_gbp': 3737.35}
+2025-02-01 23:23:13,923 - DEBUG - Calculating RTP and GGR for date: 2024-10-08
+2025-02-01 23:23:13,923 - INFO - Date: 2024-10-08, Total GGR EUR: 3161.6763889800213, Exchange Rate (GBP): 1.19303, Total GGR GBP: 3771.974782344835
+2025-02-01 23:23:13,927 - INFO - Already there is an existing record for date: 2024-10-08
+2025-02-01 23:23:13,927 - INFO - Total summary calculated successfully for 2024-10-08: {'total_bet': 11220.63, 'total_win': 8058.95, 'total_spins': 34014, 'social_spins': 18851, 'reel_spins': 15163, 'rtp': 71.82, 'ggr_eur': 3161.68, 'ggr_gbp': 3771.97}
+2025-02-01 23:23:13,927 - DEBUG - Calculating RTP and GGR for date: 2024-10-09
+2025-02-01 23:23:13,927 - INFO - Date: 2024-10-09, Total GGR EUR: 4092.48457391989, Exchange Rate (GBP): 1.19431, Total GGR GBP: 4887.695251478263
+2025-02-01 23:23:13,930 - INFO - Already there is an existing record for date: 2024-10-09
+2025-02-01 23:23:13,930 - INFO - Total summary calculated successfully for 2024-10-09: {'total_bet': 22954.84, 'total_win': 18862.36, 'total_spins': 51192, 'social_spins': 21435, 'reel_spins': 29757, 'rtp': 82.17, 'ggr_eur': 4092.48, 'ggr_gbp': 4887.7}
+2025-02-01 23:23:13,930 - DEBUG - Calculating RTP and GGR for date: 2024-10-10
+2025-02-01 23:23:13,930 - INFO - Date: 2024-10-10, Total GGR EUR: 5295.715173679979, Exchange Rate (GBP): 1.19451, Total GGR GBP: 6325.784732112471
+2025-02-01 23:23:13,930 - INFO - Already there is an existing record for date: 2024-10-10
+2025-02-01 23:23:13,930 - INFO - Total summary calculated successfully for 2024-10-10: {'total_bet': 25546.41, 'total_win': 20250.69, 'total_spins': 61083, 'social_spins': 20809, 'reel_spins': 40274, 'rtp': 79.27, 'ggr_eur': 5295.72, 'ggr_gbp': 6325.78}
+2025-02-01 23:23:13,930 - DEBUG - Calculating RTP and GGR for date: 2024-10-11
+2025-02-01 23:23:13,930 - INFO - Date: 2024-10-11, Total GGR EUR: 7111.229146389953, Exchange Rate (GBP): 1.19387, Total GGR GBP: 8489.883141000573
+2025-02-01 23:23:13,939 - INFO - Already there is an existing record for date: 2024-10-11
+2025-02-01 23:23:13,939 - INFO - Total summary calculated successfully for 2024-10-11: {'total_bet': 33448.72, 'total_win': 26337.49, 'total_spins': 55852, 'social_spins': 19838, 'reel_spins': 36014, 'rtp': 78.74, 'ggr_eur': 7111.23, 'ggr_gbp': 8489.88}
+2025-02-01 23:23:13,939 - DEBUG - Calculating RTP and GGR for date: 2024-10-12
+2025-02-01 23:23:13,939 - INFO - Date: 2024-10-12, Total GGR EUR: 4119.446583819979, Exchange Rate (GBP): 1.19366, Total GGR GBP: 4917.218609242556
+2025-02-01 23:23:13,939 - INFO - Already there is an existing record for date: 2024-10-12
+2025-02-01 23:23:13,939 - INFO - Total summary calculated successfully for 2024-10-12: {'total_bet': 31804.8, 'total_win': 27685.35, 'total_spins': 52744, 'social_spins': 17977, 'reel_spins': 34767, 'rtp': 87.05, 'ggr_eur': 4119.45, 'ggr_gbp': 4917.22}
+2025-02-01 23:23:13,939 - DEBUG - Calculating RTP and GGR for date: 2024-10-13
+2025-02-01 23:23:13,939 - INFO - Date: 2024-10-13, Total GGR EUR: 4828.238379179915, Exchange Rate (GBP): 1.19451, Total GGR GBP: 5767.3790263142
+2025-02-01 23:23:13,944 - INFO - Already there is an existing record for date: 2024-10-13
+2025-02-01 23:23:13,944 - INFO - Total summary calculated successfully for 2024-10-13: {'total_bet': 21802.6, 'total_win': 16974.36, 'total_spins': 58937, 'social_spins': 26830, 'reel_spins': 32107, 'rtp': 77.85, 'ggr_eur': 4828.24, 'ggr_gbp': 5767.38}
+2025-02-01 23:23:13,944 - DEBUG - Calculating RTP and GGR for date: 2024-10-14
+2025-02-01 23:23:13,944 - INFO - Date: 2024-10-14, Total GGR EUR: 5723.7148619198815, Exchange Rate (GBP): 1.19772, Total GGR GBP: 6855.40776441868
+2025-02-01 23:23:13,948 - INFO - Already there is an existing record for date: 2024-10-14
+2025-02-01 23:23:13,948 - INFO - Total summary calculated successfully for 2024-10-14: {'total_bet': 26970.04, 'total_win': 21246.33, 'total_spins': 51732, 'social_spins': 19938, 'reel_spins': 31794, 'rtp': 78.78, 'ggr_eur': 5723.71, 'ggr_gbp': 6855.41}
+2025-02-01 23:23:13,948 - DEBUG - Calculating RTP and GGR for date: 2024-10-15
+2025-02-01 23:23:13,948 - INFO - Date: 2024-10-15, Total GGR EUR: 4458.3457935599035, Exchange Rate (GBP): 1.20044, Total GGR GBP: 5351.9766244210505
+2025-02-01 23:23:13,953 - INFO - Already there is an existing record for date: 2024-10-15
+2025-02-01 23:23:13,953 - INFO - Total summary calculated successfully for 2024-10-15: {'total_bet': 26237.33, 'total_win': 21778.99, 'total_spins': 46612, 'social_spins': 22414, 'reel_spins': 24198, 'rtp': 83.01, 'ggr_eur': 4458.35, 'ggr_gbp': 5351.98}
+2025-02-01 23:23:13,953 - DEBUG - Calculating RTP and GGR for date: 2024-10-16
+2025-02-01 23:23:13,953 - INFO - Date: 2024-10-16, Total GGR EUR: 5126.695069473952, Exchange Rate (GBP): 1.196, Total GGR GBP: 6131.527303090846
+2025-02-01 23:23:13,958 - INFO - Already there is an existing record for date: 2024-10-16
+2025-02-01 23:23:13,958 - INFO - Total summary calculated successfully for 2024-10-16: {'total_bet': 14799.33, 'total_win': 9672.63, 'total_spins': 41605, 'social_spins': 18455, 'reel_spins': 23150, 'rtp': 65.36, 'ggr_eur': 5126.7, 'ggr_gbp': 6131.53}
+2025-02-01 23:23:13,958 - DEBUG - Calculating RTP and GGR for date: 2024-10-17
+2025-02-01 23:23:13,958 - INFO - Date: 2024-10-17, Total GGR EUR: 3232.1842454369817, Exchange Rate (GBP): 1.202, Total GGR GBP: 3885.0854630152517
+2025-02-01 23:23:13,960 - INFO - Already there is an existing record for date: 2024-10-17
+2025-02-01 23:23:13,960 - INFO - Total summary calculated successfully for 2024-10-17: {'total_bet': 15975.12, 'total_win': 12742.93, 'total_spins': 40879, 'social_spins': 17237, 'reel_spins': 23642, 'rtp': 79.77, 'ggr_eur': 3232.18, 'ggr_gbp': 3885.09}
+2025-02-01 23:23:13,960 - DEBUG - Calculating RTP and GGR for date: 2024-10-18
+2025-02-01 23:23:13,960 - INFO - Date: 2024-10-18, Total GGR EUR: 1808.53842633993, Exchange Rate (GBP): 1.20038, Total GGR GBP: 2170.9333562099255
+2025-02-01 23:23:13,965 - INFO - Already there is an existing record for date: 2024-10-18
+2025-02-01 23:23:13,965 - INFO - Total summary calculated successfully for 2024-10-18: {'total_bet': 16248.5, 'total_win': 14439.96, 'total_spins': 42559, 'social_spins': 20759, 'reel_spins': 21800, 'rtp': 88.87, 'ggr_eur': 1808.54, 'ggr_gbp': 2170.93}
+2025-02-01 23:23:13,965 - DEBUG - Calculating RTP and GGR for date: 2024-10-19
+2025-02-01 23:23:13,965 - INFO - Date: 2024-10-19, Total GGR EUR: 3343.2624795999927, Exchange Rate (GBP): 1.20038, Total GGR GBP: 4013.185415262239
+2025-02-01 23:23:13,967 - INFO - Already there is an existing record for date: 2024-10-19
+2025-02-01 23:23:13,967 - INFO - Total summary calculated successfully for 2024-10-19: {'total_bet': 16203.53, 'total_win': 12860.26, 'total_spins': 51249, 'social_spins': 27444, 'reel_spins': 23805, 'rtp': 79.37, 'ggr_eur': 3343.26, 'ggr_gbp': 4013.19}
+2025-02-01 23:23:13,967 - DEBUG - Calculating RTP and GGR for date: 2024-10-20
+2025-02-01 23:23:13,967 - INFO - Date: 2024-10-20, Total GGR EUR: 4107.94504512996, Exchange Rate (GBP): 1.20082, Total GGR GBP: 4932.902569092958
+2025-02-01 23:23:13,972 - INFO - Already there is an existing record for date: 2024-10-20
+2025-02-01 23:23:13,972 - INFO - Total summary calculated successfully for 2024-10-20: {'total_bet': 13527.43, 'total_win': 9419.49, 'total_spins': 38136, 'social_spins': 19677, 'reel_spins': 18459, 'rtp': 69.63, 'ggr_eur': 4107.95, 'ggr_gbp': 4932.9}
+2025-02-01 23:23:13,972 - DEBUG - Calculating RTP and GGR for date: 2024-10-21
+2025-02-01 23:23:13,972 - INFO - Date: 2024-10-21, Total GGR EUR: 4884.076902019997, Exchange Rate (GBP): 1.20021, Total GGR GBP: 5861.9179385734205
+2025-02-01 23:23:13,972 - INFO - Already there is an existing record for date: 2024-10-21
+2025-02-01 23:23:13,972 - INFO - Total summary calculated successfully for 2024-10-21: {'total_bet': 13695.76, 'total_win': 8811.68, 'total_spins': 35612, 'social_spins': 18784, 'reel_spins': 16828, 'rtp': 64.34, 'ggr_eur': 4884.08, 'ggr_gbp': 5861.92}
+2025-02-01 23:23:13,972 - DEBUG - Calculating RTP and GGR for date: 2024-10-22
+2025-02-01 23:23:13,972 - INFO - Date: 2024-10-22, Total GGR EUR: 2262.129066130996, Exchange Rate (GBP): 1.2024, Total GGR GBP: 2719.983989115909
+2025-02-01 23:23:13,981 - INFO - Already there is an existing record for date: 2024-10-22
+2025-02-01 23:23:13,981 - INFO - Total summary calculated successfully for 2024-10-22: {'total_bet': 13326.64, 'total_win': 11064.51, 'total_spins': 36824, 'social_spins': 19761, 'reel_spins': 17063, 'rtp': 83.03, 'ggr_eur': 2262.13, 'ggr_gbp': 2719.98}
+2025-02-01 23:23:13,981 - DEBUG - Calculating RTP and GGR for date: 2024-10-23
+2025-02-01 23:23:13,981 - INFO - Date: 2024-10-23, Total GGR EUR: 2534.830368608993, Exchange Rate (GBP): 1.19788, Total GGR GBP: 3036.422601949341
+2025-02-01 23:23:13,981 - INFO - Already there is an existing record for date: 2024-10-23
+2025-02-01 23:23:13,981 - INFO - Total summary calculated successfully for 2024-10-23: {'total_bet': 12943.6, 'total_win': 10408.77, 'total_spins': 38313, 'social_spins': 19144, 'reel_spins': 19169, 'rtp': 80.42, 'ggr_eur': 2534.83, 'ggr_gbp': 3036.42}
+2025-02-01 23:23:13,981 - DEBUG - Calculating RTP and GGR for date: 2024-10-24
+2025-02-01 23:23:13,981 - INFO - Date: 2024-10-24, Total GGR EUR: 3947.4727450699484, Exchange Rate (GBP): 1.19828, Total GGR GBP: 4730.177640962418
+2025-02-01 23:23:13,986 - INFO - Already there is an existing record for date: 2024-10-24
+2025-02-01 23:23:13,986 - INFO - Total summary calculated successfully for 2024-10-24: {'total_bet': 14931.08, 'total_win': 10983.61, 'total_spins': 41799, 'social_spins': 19108, 'reel_spins': 22691, 'rtp': 73.56, 'ggr_eur': 3947.47, 'ggr_gbp': 4730.18}
+2025-02-01 23:23:13,986 - DEBUG - Calculating RTP and GGR for date: 2024-10-25
+2025-02-01 23:23:13,986 - INFO - Date: 2024-10-25, Total GGR EUR: 5904.081040194986, Exchange Rate (GBP): 1.20022, Total GGR GBP: 7086.196146062826
+2025-02-01 23:23:13,986 - INFO - Already there is an existing record for date: 2024-10-25
+2025-02-01 23:23:13,986 - INFO - Total summary calculated successfully for 2024-10-25: {'total_bet': 23809.48, 'total_win': 17905.4, 'total_spins': 50177, 'social_spins': 17670, 'reel_spins': 32507, 'rtp': 75.2, 'ggr_eur': 5904.08, 'ggr_gbp': 7086.2}
+2025-02-01 23:23:13,986 - DEBUG - Calculating RTP and GGR for date: 2024-10-26
+2025-02-01 23:23:13,986 - INFO - Date: 2024-10-26, Total GGR EUR: 3840.9986195509227, Exchange Rate (GBP): 1.20012, Total GGR GBP: 4609.6592632954535
+2025-02-01 23:23:13,995 - INFO - Already there is an existing record for date: 2024-10-26
+2025-02-01 23:23:13,995 - INFO - Total summary calculated successfully for 2024-10-26: {'total_bet': 24210.11, 'total_win': 20369.11, 'total_spins': 46863, 'social_spins': 18574, 'reel_spins': 28289, 'rtp': 84.13, 'ggr_eur': 3841.0, 'ggr_gbp': 4609.66}
+2025-02-01 23:23:13,995 - DEBUG - Calculating RTP and GGR for date: 2024-10-27
+2025-02-01 23:23:13,995 - INFO - Date: 2024-10-27, Total GGR EUR: 3576.9586833699996, Exchange Rate (GBP): 1.20019, Total GGR GBP: 4293.03004219384
+2025-02-01 23:23:13,995 - INFO - Already there is an existing record for date: 2024-10-27
+2025-02-01 23:23:13,995 - INFO - Total summary calculated successfully for 2024-10-27: {'total_bet': 17262.26, 'total_win': 13685.3, 'total_spins': 41778, 'social_spins': 13964, 'reel_spins': 27814, 'rtp': 79.28, 'ggr_eur': 3576.96, 'ggr_gbp': 4293.03}
+2025-02-01 23:23:13,995 - DEBUG - Calculating RTP and GGR for date: 2024-10-28
+2025-02-01 23:23:13,995 - INFO - Date: 2024-10-28, Total GGR EUR: 3121.161572399902, Exchange Rate (GBP): 1.19938, Total GGR GBP: 3743.458766704994
+2025-02-01 23:23:14,000 - INFO - Already there is an existing record for date: 2024-10-28
+2025-02-01 23:23:14,000 - INFO - Total summary calculated successfully for 2024-10-28: {'total_bet': 24343.75, 'total_win': 21222.59, 'total_spins': 51048, 'social_spins': 18073, 'reel_spins': 32975, 'rtp': 87.18, 'ggr_eur': 3121.16, 'ggr_gbp': 3743.46}
+2025-02-01 23:23:14,000 - DEBUG - Calculating RTP and GGR for date: 2024-10-29
+2025-02-01 23:23:14,000 - INFO - Date: 2024-10-29, Total GGR EUR: 3893.5230719299525, Exchange Rate (GBP): 1.20265, Total GGR GBP: 4682.545522456558
+2025-02-01 23:23:14,002 - INFO - Already there is an existing record for date: 2024-10-29
+2025-02-01 23:23:14,002 - INFO - Total summary calculated successfully for 2024-10-29: {'total_bet': 16543.72, 'total_win': 12650.2, 'total_spins': 42462, 'social_spins': 15259, 'reel_spins': 27203, 'rtp': 76.47, 'ggr_eur': 3893.52, 'ggr_gbp': 4682.55}
+2025-02-01 23:23:14,002 - DEBUG - Calculating RTP and GGR for date: 2024-10-30
+2025-02-01 23:23:14,002 - INFO - Date: 2024-10-30, Total GGR EUR: 7950.024780369924, Exchange Rate (GBP): 1.19338, Total GGR GBP: 9487.40057239786
+2025-02-01 23:23:14,002 - INFO - Already there is an existing record for date: 2024-10-30
+2025-02-01 23:23:14,002 - INFO - Total summary calculated successfully for 2024-10-30: {'total_bet': 32145.58, 'total_win': 24195.56, 'total_spins': 73794, 'social_spins': 15779, 'reel_spins': 58015, 'rtp': 75.27, 'ggr_eur': 7950.02, 'ggr_gbp': 9487.4}
+2025-02-01 23:23:14,007 - DEBUG - Calculating RTP and GGR for date: 2024-10-31
+2025-02-01 23:23:14,007 - INFO - Date: 2024-10-31, Total GGR EUR: 6739.46354784994, Exchange Rate (GBP): 1.18486, Total GGR GBP: 7985.320779305481
+2025-02-01 23:23:14,007 - INFO - Already there is an existing record for date: 2024-10-31
+2025-02-01 23:23:14,007 - INFO - Total summary calculated successfully for 2024-10-31: {'total_bet': 33770.88, 'total_win': 27031.41, 'total_spins': 72908, 'social_spins': 23828, 'reel_spins': 49080, 'rtp': 80.04, 'ggr_eur': 6739.46, 'ggr_gbp': 7985.32}
+2025-02-01 23:23:14,007 - DEBUG - Calculating RTP and GGR for date: 2024-11-01
+2025-02-01 23:23:14,007 - INFO - Date: 2024-11-01, Total GGR EUR: 4148.345744874019, Exchange Rate (GBP): 1.18794, Total GGR GBP: 4927.985844165642
+2025-02-01 23:23:14,007 - INFO - Already there is an existing record for date: 2024-11-01
+2025-02-01 23:23:14,007 - INFO - Total summary calculated successfully for 2024-11-01: {'total_bet': 19065.28, 'total_win': 14916.94, 'total_spins': 48724, 'social_spins': 21430, 'reel_spins': 27294, 'rtp': 78.24, 'ggr_eur': 4148.35, 'ggr_gbp': 4927.99}
+2025-02-01 23:23:14,007 - DEBUG - Calculating RTP and GGR for date: 2024-11-02
+2025-02-01 23:23:14,007 - INFO - Date: 2024-11-02, Total GGR EUR: 5005.697995719995, Exchange Rate (GBP): 1.18746, Total GGR GBP: 5944.066141997665
+2025-02-01 23:23:14,016 - INFO - Already there is an existing record for date: 2024-11-02
+2025-02-01 23:23:14,016 - INFO - Total summary calculated successfully for 2024-11-02: {'total_bet': 18811.9, 'total_win': 13806.2, 'total_spins': 59285, 'social_spins': 39004, 'reel_spins': 20281, 'rtp': 73.39, 'ggr_eur': 5005.7, 'ggr_gbp': 5944.07}
+2025-02-01 23:23:14,016 - DEBUG - Calculating RTP and GGR for date: 2024-11-03
+2025-02-01 23:23:14,016 - INFO - Date: 2024-11-03, Total GGR EUR: 3479.8040647999387, Exchange Rate (GBP): 1.1913, Total GGR GBP: 4145.490582396167
+2025-02-01 23:23:14,016 - INFO - Already there is an existing record for date: 2024-11-03
+2025-02-01 23:23:14,016 - INFO - Total summary calculated successfully for 2024-11-03: {'total_bet': 15875.13, 'total_win': 12395.33, 'total_spins': 54671, 'social_spins': 35444, 'reel_spins': 19227, 'rtp': 78.08, 'ggr_eur': 3479.8, 'ggr_gbp': 4145.49}
+2025-02-01 23:23:14,016 - DEBUG - Calculating RTP and GGR for date: 2024-11-04
+2025-02-01 23:23:14,016 - INFO - Date: 2024-11-04, Total GGR EUR: 5150.814357209842, Exchange Rate (GBP): 1.19135, Total GGR GBP: 6136.422684461944
+2025-02-01 23:23:14,022 - INFO - Already there is an existing record for date: 2024-11-04
+2025-02-01 23:23:14,022 - INFO - Total summary calculated successfully for 2024-11-04: {'total_bet': 23427.08, 'total_win': 18276.27, 'total_spins': 62275, 'social_spins': 40712, 'reel_spins': 21563, 'rtp': 78.01, 'ggr_eur': 5150.81, 'ggr_gbp': 6136.42}
+2025-02-01 23:23:14,022 - DEBUG - Calculating RTP and GGR for date: 2024-11-05
+2025-02-01 23:23:14,022 - INFO - Date: 2024-11-05, Total GGR EUR: 5187.389803451913, Exchange Rate (GBP): 1.19296, Total GGR GBP: 6188.348539925994
+2025-02-01 23:23:14,022 - INFO - Already there is an existing record for date: 2024-11-05
+2025-02-01 23:23:14,022 - INFO - Total summary calculated successfully for 2024-11-05: {'total_bet': 18798.93, 'total_win': 13611.54, 'total_spins': 53279, 'social_spins': 32387, 'reel_spins': 20892, 'rtp': 72.41, 'ggr_eur': 5187.39, 'ggr_gbp': 6188.35}
+2025-02-01 23:23:14,022 - DEBUG - Calculating RTP and GGR for date: 2024-11-06
+2025-02-01 23:23:14,027 - INFO - Date: 2024-11-06, Total GGR EUR: 4792.349251669906, Exchange Rate (GBP): 1.20039, Total GGR GBP: 5752.688118212039
+2025-02-01 23:23:14,030 - INFO - Already there is an existing record for date: 2024-11-06
+2025-02-01 23:23:14,030 - INFO - Total summary calculated successfully for 2024-11-06: {'total_bet': 16778.47, 'total_win': 11986.12, 'total_spins': 59331, 'social_spins': 41203, 'reel_spins': 18128, 'rtp': 71.44, 'ggr_eur': 4792.35, 'ggr_gbp': 5752.69}
+2025-02-01 23:23:14,030 - DEBUG - Calculating RTP and GGR for date: 2024-11-07
+2025-02-01 23:23:14,030 - INFO - Date: 2024-11-07, Total GGR EUR: 3766.68910813987, Exchange Rate (GBP): 1.20255, Total GGR GBP: 4529.631986993601
+2025-02-01 23:23:14,030 - INFO - Already there is an existing record for date: 2024-11-07
+2025-02-01 23:23:14,030 - INFO - Total summary calculated successfully for 2024-11-07: {'total_bet': 15299.54, 'total_win': 11532.85, 'total_spins': 51512, 'social_spins': 37195, 'reel_spins': 14317, 'rtp': 75.38, 'ggr_eur': 3766.69, 'ggr_gbp': 4529.63}
+2025-02-01 23:23:14,030 - DEBUG - Calculating RTP and GGR for date: 2024-11-08
+2025-02-01 23:23:14,030 - INFO - Date: 2024-11-08, Total GGR EUR: 4280.479403969914, Exchange Rate (GBP): 1.20474, Total GGR GBP: 5156.864757138714
+2025-02-01 23:23:14,035 - INFO - Already there is an existing record for date: 2024-11-08
+2025-02-01 23:23:14,035 - INFO - Total summary calculated successfully for 2024-11-08: {'total_bet': 14959.23, 'total_win': 10678.75, 'total_spins': 52059, 'social_spins': 39873, 'reel_spins': 12186, 'rtp': 71.39, 'ggr_eur': 4280.48, 'ggr_gbp': 5156.86}
+2025-02-01 23:23:14,035 - DEBUG - Calculating RTP and GGR for date: 2024-11-09
+2025-02-01 23:23:14,035 - INFO - Date: 2024-11-09, Total GGR EUR: 2477.9404770859965, Exchange Rate (GBP): 1.20469, Total GGR GBP: 2985.150113340729
+2025-02-01 23:23:14,035 - INFO - Already there is an existing record for date: 2024-11-09
+2025-02-01 23:23:14,035 - INFO - Total summary calculated successfully for 2024-11-09: {'total_bet': 14658.65, 'total_win': 12180.71, 'total_spins': 53934, 'social_spins': 41725, 'reel_spins': 12209, 'rtp': 83.1, 'ggr_eur': 2477.94, 'ggr_gbp': 2985.15}
+2025-02-01 23:23:14,035 - DEBUG - Calculating RTP and GGR for date: 2024-11-10
+2025-02-01 23:23:14,035 - INFO - Date: 2024-11-10, Total GGR EUR: 4180.809848469926, Exchange Rate (GBP): 1.2055, Total GGR GBP: 5039.9662723304955
+2025-02-01 23:23:14,042 - INFO - Already there is an existing record for date: 2024-11-10
+2025-02-01 23:23:14,042 - INFO - Total summary calculated successfully for 2024-11-10: {'total_bet': 21546.36, 'total_win': 17365.55, 'total_spins': 46943, 'social_spins': 34412, 'reel_spins': 12531, 'rtp': 80.6, 'ggr_eur': 4180.81, 'ggr_gbp': 5039.97}
+2025-02-01 23:23:14,042 - DEBUG - Calculating RTP and GGR for date: 2024-11-11
+2025-02-01 23:23:14,042 - INFO - Date: 2024-11-11, Total GGR EUR: 1290.9726013099225, Exchange Rate (GBP): 1.2074, Total GGR GBP: 1558.7203188216006
+2025-02-01 23:23:14,042 - INFO - Already there is an existing record for date: 2024-11-11
+2025-02-01 23:23:14,049 - INFO - Total summary calculated successfully for 2024-11-11: {'total_bet': 14063.15, 'total_win': 12772.18, 'total_spins': 44043, 'social_spins': 32765, 'reel_spins': 11278, 'rtp': 90.82, 'ggr_eur': 1290.97, 'ggr_gbp': 1558.72}
+2025-02-01 23:23:14,049 - DEBUG - Calculating RTP and GGR for date: 2024-11-12
+2025-02-01 23:23:14,049 - INFO - Date: 2024-11-12, Total GGR EUR: 2874.913510290022, Exchange Rate (GBP): 1.19979, Total GGR GBP: 3449.292480510865
+2025-02-01 23:23:14,050 - INFO - Already there is an existing record for date: 2024-11-12
+2025-02-01 23:23:14,050 - INFO - Total summary calculated successfully for 2024-11-12: {'total_bet': 8686.29, 'total_win': 5811.38, 'total_spins': 34511, 'social_spins': 21859, 'reel_spins': 12652, 'rtp': 66.9, 'ggr_eur': 2874.91, 'ggr_gbp': 3449.29}
+2025-02-01 23:23:14,050 - DEBUG - Calculating RTP and GGR for date: 2024-11-13
+2025-02-01 23:23:14,053 - INFO - Date: 2024-11-13, Total GGR EUR: 2153.1235180700314, Exchange Rate (GBP): 1.2028, Total GGR GBP: 2589.776967534634
+2025-02-01 23:23:14,056 - INFO - Already there is an existing record for date: 2024-11-13
+2025-02-01 23:23:14,056 - INFO - Total summary calculated successfully for 2024-11-13: {'total_bet': 9713.58, 'total_win': 7560.45, 'total_spins': 33872, 'social_spins': 21667, 'reel_spins': 12205, 'rtp': 77.83, 'ggr_eur': 2153.12, 'ggr_gbp': 2589.78}
+2025-02-01 23:23:14,056 - DEBUG - Calculating RTP and GGR for date: 2024-11-14
+2025-02-01 23:23:14,056 - INFO - Date: 2024-11-14, Total GGR EUR: 2536.82443239, Exchange Rate (GBP): 1.20293, Total GGR GBP: 3051.622214454903
+2025-02-01 23:23:14,057 - INFO - Already there is an existing record for date: 2024-11-14
+2025-02-01 23:23:14,057 - INFO - Total summary calculated successfully for 2024-11-14: {'total_bet': 10986.88, 'total_win': 8450.06, 'total_spins': 35764, 'social_spins': 24677, 'reel_spins': 11087, 'rtp': 76.91, 'ggr_eur': 2536.82, 'ggr_gbp': 3051.62}
+2025-02-01 23:23:14,057 - DEBUG - Calculating RTP and GGR for date: 2024-11-15
+2025-02-01 23:23:14,057 - INFO - Date: 2024-11-15, Total GGR EUR: 4220.962126340018, Exchange Rate (GBP): 1.19644, Total GGR GBP: 5050.12792643825
+2025-02-01 23:23:14,063 - INFO - Already there is an existing record for date: 2024-11-15
+2025-02-01 23:23:14,063 - INFO - Total summary calculated successfully for 2024-11-15: {'total_bet': 11996.3, 'total_win': 7775.34, 'total_spins': 39032, 'social_spins': 27928, 'reel_spins': 11104, 'rtp': 64.81, 'ggr_eur': 4220.96, 'ggr_gbp': 5050.13}
+2025-02-01 23:23:14,064 - DEBUG - Calculating RTP and GGR for date: 2024-11-16
+2025-02-01 23:23:14,064 - INFO - Date: 2024-11-16, Total GGR EUR: 3562.6708500299646, Exchange Rate (GBP): 1.19663, Total GGR GBP: 4263.198819271357
+2025-02-01 23:23:14,064 - INFO - Already there is an existing record for date: 2024-11-16
+2025-02-01 23:23:14,064 - INFO - Total summary calculated successfully for 2024-11-16: {'total_bet': 15716.66, 'total_win': 12153.98, 'total_spins': 41919, 'social_spins': 26721, 'reel_spins': 15198, 'rtp': 77.33, 'ggr_eur': 3562.67, 'ggr_gbp': 4263.2}
+2025-02-01 23:23:14,064 - DEBUG - Calculating RTP and GGR for date: 2024-11-17
+2025-02-01 23:23:14,064 - INFO - Date: 2024-11-17, Total GGR EUR: 1591.3331785700284, Exchange Rate (GBP): 1.19782, Total GGR GBP: 1906.1307079547516
+2025-02-01 23:23:14,070 - INFO - Already there is an existing record for date: 2024-11-17
+2025-02-01 23:23:14,070 - INFO - Total summary calculated successfully for 2024-11-17: {'total_bet': 10795.51, 'total_win': 9204.18, 'total_spins': 34846, 'social_spins': 23306, 'reel_spins': 11540, 'rtp': 85.26, 'ggr_eur': 1591.33, 'ggr_gbp': 1906.13}
+2025-02-01 23:23:14,070 - DEBUG - Calculating RTP and GGR for date: 2024-11-18
+2025-02-01 23:23:14,070 - INFO - Date: 2024-11-18, Total GGR EUR: 3401.7700475000265, Exchange Rate (GBP): 1.19661, Total GGR GBP: 4070.5920565390065
+2025-02-01 23:23:14,072 - INFO - Already there is an existing record for date: 2024-11-18
+2025-02-01 23:23:14,072 - INFO - Total summary calculated successfully for 2024-11-18: {'total_bet': 10530.7, 'total_win': 7128.93, 'total_spins': 34106, 'social_spins': 23658, 'reel_spins': 10448, 'rtp': 67.7, 'ggr_eur': 3401.77, 'ggr_gbp': 4070.59}
+2025-02-01 23:23:14,072 - DEBUG - Calculating RTP and GGR for date: 2024-11-19
+2025-02-01 23:23:14,072 - INFO - Date: 2024-11-19, Total GGR EUR: 2119.869939919983, Exchange Rate (GBP): 1.1968, Total GGR GBP: 2537.060344096236
+2025-02-01 23:23:14,077 - INFO - Already there is an existing record for date: 2024-11-19
+2025-02-01 23:23:14,077 - INFO - Total summary calculated successfully for 2024-11-19: {'total_bet': 10361.96, 'total_win': 8242.09, 'total_spins': 34093, 'social_spins': 25234, 'reel_spins': 8859, 'rtp': 79.54, 'ggr_eur': 2119.87, 'ggr_gbp': 2537.06}
+2025-02-01 23:23:14,077 - DEBUG - Calculating RTP and GGR for date: 2024-11-20
+2025-02-01 23:23:14,077 - INFO - Date: 2024-11-20, Total GGR EUR: 2079.2152930799966, Exchange Rate (GBP): 1.19988, Total GGR GBP: 2494.8088458608263
+2025-02-01 23:23:14,077 - INFO - Already there is an existing record for date: 2024-11-20
+2025-02-01 23:23:14,077 - INFO - Total summary calculated successfully for 2024-11-20: {'total_bet': 10143.63, 'total_win': 8064.42, 'total_spins': 24738, 'social_spins': 18187, 'reel_spins': 6551, 'rtp': 79.5, 'ggr_eur': 2079.22, 'ggr_gbp': 2494.81}
+2025-02-01 23:23:14,077 - DEBUG - Calculating RTP and GGR for date: 2024-11-21
+2025-02-01 23:23:14,077 - INFO - Date: 2024-11-21, Total GGR EUR: 1045.0651584199932, Exchange Rate (GBP): 1.20205, Total GGR GBP: 1256.2205736787528
+2025-02-01 23:23:14,084 - INFO - Already there is an existing record for date: 2024-11-21
+2025-02-01 23:23:14,084 - INFO - Total summary calculated successfully for 2024-11-21: {'total_bet': 9608.86, 'total_win': 8563.8, 'total_spins': 26227, 'social_spins': 19843, 'reel_spins': 6384, 'rtp': 89.12, 'ggr_eur': 1045.07, 'ggr_gbp': 1256.22}
+2025-02-01 23:23:14,084 - DEBUG - Calculating RTP and GGR for date: 2024-11-22
+2025-02-01 23:23:14,084 - INFO - Date: 2024-11-22, Total GGR EUR: 1781.5897579400043, Exchange Rate (GBP): 1.20269, Total GGR GBP: 2142.700185976864
+2025-02-01 23:23:14,084 - INFO - Already there is an existing record for date: 2024-11-22
+2025-02-01 23:23:14,084 - INFO - Total summary calculated successfully for 2024-11-22: {'total_bet': 11231.27, 'total_win': 9449.68, 'total_spins': 30415, 'social_spins': 24067, 'reel_spins': 6348, 'rtp': 84.14, 'ggr_eur': 1781.59, 'ggr_gbp': 2142.7}
+2025-02-01 23:23:14,084 - DEBUG - Calculating RTP and GGR for date: 2024-11-23
+2025-02-01 23:23:14,084 - INFO - Date: 2024-11-23, Total GGR EUR: 3335.075790060014, Exchange Rate (GBP): 1.20274, Total GGR GBP: 4011.2290557367805
+2025-02-01 23:23:14,090 - INFO - Already there is an existing record for date: 2024-11-23
+2025-02-01 23:23:14,092 - INFO - Total summary calculated successfully for 2024-11-23: {'total_bet': 9280.9, 'total_win': 5945.83, 'total_spins': 31589, 'social_spins': 24298, 'reel_spins': 7291, 'rtp': 64.07, 'ggr_eur': 3335.08, 'ggr_gbp': 4011.23}
+2025-02-01 23:23:14,092 - DEBUG - Calculating RTP and GGR for date: 2024-11-24
+2025-02-01 23:23:14,092 - INFO - Date: 2024-11-24, Total GGR EUR: 1934.3297740300204, Exchange Rate (GBP): 1.20181, Total GGR GBP: 2324.696865727019
+2025-02-01 23:23:14,092 - INFO - Already there is an existing record for date: 2024-11-24
+2025-02-01 23:23:14,092 - INFO - Total summary calculated successfully for 2024-11-24: {'total_bet': 6685.02, 'total_win': 4750.69, 'total_spins': 28627, 'social_spins': 23142, 'reel_spins': 5485, 'rtp': 71.06, 'ggr_eur': 1934.33, 'ggr_gbp': 2324.7}
+2025-02-01 23:23:14,092 - DEBUG - Calculating RTP and GGR for date: 2024-11-25
+2025-02-01 23:23:14,092 - INFO - Date: 2024-11-25, Total GGR EUR: 1034.906823310017, Exchange Rate (GBP): 1.19898, Total GGR GBP: 1240.8325830122442
+2025-02-01 23:23:14,092 - INFO - Already there is an existing record for date: 2024-11-25
+2025-02-01 23:23:14,092 - INFO - Total summary calculated successfully for 2024-11-25: {'total_bet': 8855.47, 'total_win': 7820.56, 'total_spins': 27243, 'social_spins': 21475, 'reel_spins': 5768, 'rtp': 88.31, 'ggr_eur': 1034.91, 'ggr_gbp': 1240.83}
+2025-02-01 23:23:14,097 - DEBUG - Calculating RTP and GGR for date: 2024-11-26
+2025-02-01 23:23:14,097 - INFO - Date: 2024-11-26, Total GGR EUR: -3814.5045474800063, Exchange Rate (GBP): 1.19848, Total GGR GBP: -4571.607410063838
+2025-02-01 23:23:14,097 - INFO - Already there is an existing record for date: 2024-11-26
+2025-02-01 23:23:14,097 - INFO - Total summary calculated successfully for 2024-11-26: {'total_bet': 18509.41, 'total_win': 22323.92, 'total_spins': 29979, 'social_spins': 24410, 'reel_spins': 5569, 'rtp': 120.61, 'ggr_eur': -3814.5, 'ggr_gbp': -4571.61}
+2025-02-01 23:23:14,097 - DEBUG - Calculating RTP and GGR for date: 2024-11-27
+2025-02-01 23:23:14,097 - INFO - Date: 2024-11-27, Total GGR EUR: 2310.095072809987, Exchange Rate (GBP): 1.20019, Total GGR GBP: 2772.5530054358182
+2025-02-01 23:23:14,097 - INFO - Already there is an existing record for date: 2024-11-27
+2025-02-01 23:23:14,097 - INFO - Total summary calculated successfully for 2024-11-27: {'total_bet': 12014.0, 'total_win': 9703.91, 'total_spins': 30848, 'social_spins': 23443, 'reel_spins': 7405, 'rtp': 80.77, 'ggr_eur': 2310.1, 'ggr_gbp': 2772.55}
+2025-02-01 23:23:14,097 - DEBUG - Calculating RTP and GGR for date: 2024-11-28
+2025-02-01 23:23:14,097 - INFO - Date: 2024-11-28, Total GGR EUR: 2957.842981980006, Exchange Rate (GBP): 1.20205, Total GGR GBP: 3555.475156489066
+2025-02-01 23:23:14,106 - INFO - Already there is an existing record for date: 2024-11-28
+2025-02-01 23:23:14,106 - INFO - Total summary calculated successfully for 2024-11-28: {'total_bet': 9837.43, 'total_win': 6879.59, 'total_spins': 30987, 'social_spins': 24513, 'reel_spins': 6474, 'rtp': 69.93, 'ggr_eur': 2957.84, 'ggr_gbp': 3555.48}
+2025-02-01 23:23:14,106 - DEBUG - Calculating RTP and GGR for date: 2024-11-29
+2025-02-01 23:23:14,106 - INFO - Date: 2024-11-29, Total GGR EUR: 2435.977963900017, Exchange Rate (GBP): 1.20349, Total GGR GBP: 2931.6751197740314
+2025-02-01 23:23:14,106 - INFO - Already there is an existing record for date: 2024-11-29
+2025-02-01 23:23:14,106 - INFO - Total summary calculated successfully for 2024-11-29: {'total_bet': 15481.77, 'total_win': 13045.8, 'total_spins': 29692, 'social_spins': 21899, 'reel_spins': 7793, 'rtp': 84.27, 'ggr_eur': 2435.98, 'ggr_gbp': 2931.68}
+2025-02-01 23:23:14,106 - DEBUG - Calculating RTP and GGR for date: 2024-11-30
+2025-02-01 23:23:14,106 - INFO - Date: 2024-11-30, Total GGR EUR: 837.2323394300001, Exchange Rate (GBP): 1.20393, Total GGR GBP: 1007.96913040996
+2025-02-01 23:23:14,113 - INFO - Already there is an existing record for date: 2024-11-30
+2025-02-01 23:23:14,113 - INFO - Total summary calculated successfully for 2024-11-30: {'total_bet': 9413.77, 'total_win': 8576.54, 'total_spins': 33899, 'social_spins': 25757, 'reel_spins': 8142, 'rtp': 91.11, 'ggr_eur': 837.23, 'ggr_gbp': 1007.97}
+2025-02-01 23:23:14,113 - DEBUG - Calculating RTP and GGR for date: 2024-12-01
+2025-02-01 23:23:14,113 - INFO - Date: 2024-12-01, Total GGR EUR: 3082.1543006300053, Exchange Rate (GBP): 1.20451, Total GGR GBP: 3712.485676651848
+2025-02-01 23:23:14,113 - INFO - Already there is an existing record for date: 2024-12-01
+2025-02-01 23:23:14,113 - INFO - Total summary calculated successfully for 2024-12-01: {'total_bet': 12360.04, 'total_win': 9277.89, 'total_spins': 27423, 'social_spins': 17862, 'reel_spins': 9561, 'rtp': 75.06, 'ggr_eur': 3082.15, 'ggr_gbp': 3712.49}
+2025-02-01 23:23:14,113 - DEBUG - Calculating RTP and GGR for date: 2024-12-02
+2025-02-01 23:23:14,113 - INFO - Date: 2024-12-02, Total GGR EUR: 1936.6244597494688, Exchange Rate (GBP): 1.20558, Total GGR GBP: 2334.755716184765
+2025-02-01 23:23:14,120 - INFO - Already there is an existing record for date: 2024-12-02
+2025-02-01 23:23:14,120 - INFO - Total summary calculated successfully for 2024-12-02: {'total_bet': 5517.33, 'total_win': 3580.71, 'total_spins': 12533, 'social_spins': 6688, 'reel_spins': 5845, 'rtp': 64.9, 'ggr_eur': 1936.62, 'ggr_gbp': 2334.76}
+2025-02-01 23:23:14,120 - DEBUG - Calculating RTP and GGR for date: 2024-12-03
+2025-02-01 23:23:14,120 - INFO - Date: 2024-12-03, Total GGR EUR: -7152.470944650002, Exchange Rate (GBP): 1.20585, Total GGR GBP: -8624.807088606205
+2025-02-01 23:23:14,120 - INFO - Already there is an existing record for date: 2024-12-03
+2025-02-01 23:23:14,120 - INFO - Total summary calculated successfully for 2024-12-03: {'total_bet': 14353.67, 'total_win': 21506.14, 'total_spins': 14093, 'social_spins': 6271, 'reel_spins': 7822, 'rtp': 149.83, 'ggr_eur': -7152.47, 'ggr_gbp': -8624.81}
+2025-02-01 23:23:14,120 - DEBUG - Calculating RTP and GGR for date: 2024-12-04
+2025-02-01 23:23:14,120 - INFO - Date: 2024-12-04, Total GGR EUR: 265.21593305999704, Exchange Rate (GBP): 1.20812, Total GGR GBP: 320.41267304844365
+2025-02-01 23:23:14,125 - INFO - Already there is an existing record for date: 2024-12-04
+2025-02-01 23:23:14,125 - INFO - Total summary calculated successfully for 2024-12-04: {'total_bet': 5786.39, 'total_win': 5521.17, 'total_spins': 11366, 'social_spins': 4586, 'reel_spins': 6780, 'rtp': 95.42, 'ggr_eur': 265.22, 'ggr_gbp': 320.41}
+2025-02-01 23:23:14,127 - DEBUG - Calculating RTP and GGR for date: 2024-12-05
+2025-02-01 23:23:14,127 - INFO - Date: 2024-12-05, Total GGR EUR: 2908.9334633600056, Exchange Rate (GBP): 1.20538, Total GGR GBP: 3506.3702180648834
+2025-02-01 23:23:14,127 - INFO - Already there is an existing record for date: 2024-12-05
+2025-02-01 23:23:14,127 - INFO - Total summary calculated successfully for 2024-12-05: {'total_bet': 6616.25, 'total_win': 3707.32, 'total_spins': 13843, 'social_spins': 4761, 'reel_spins': 9082, 'rtp': 56.03, 'ggr_eur': 2908.93, 'ggr_gbp': 3506.37}
+2025-02-01 23:23:14,127 - DEBUG - Calculating RTP and GGR for date: 2024-12-06
+2025-02-01 23:23:14,127 - INFO - Date: 2024-12-06, Total GGR EUR: 2760.4133390000025, Exchange Rate (GBP): 1.2049, Total GGR GBP: 3326.022032161103
+2025-02-01 23:23:14,132 - INFO - Already there is an existing record for date: 2024-12-06
+2025-02-01 23:23:14,132 - INFO - Total summary calculated successfully for 2024-12-06: {'total_bet': 7173.17, 'total_win': 4412.75, 'total_spins': 12777, 'social_spins': 6503, 'reel_spins': 6274, 'rtp': 61.52, 'ggr_eur': 2760.41, 'ggr_gbp': 3326.02}
+2025-02-01 23:23:14,132 - DEBUG - Calculating RTP and GGR for date: 2024-12-07
+2025-02-01 23:23:14,132 - INFO - Date: 2024-12-07, Total GGR EUR: 2784.2636072899877, Exchange Rate (GBP): 1.2049, Total GGR GBP: 3354.759220423706
+2025-02-01 23:23:14,132 - INFO - Already there is an existing record for date: 2024-12-07
+2025-02-01 23:23:14,132 - INFO - Total summary calculated successfully for 2024-12-07: {'total_bet': 14550.16, 'total_win': 11765.9, 'total_spins': 14735, 'social_spins': 6433, 'reel_spins': 8302, 'rtp': 80.86, 'ggr_eur': 2784.26, 'ggr_gbp': 3354.76}
+2025-02-01 23:23:14,132 - DEBUG - Calculating RTP and GGR for date: 2024-12-08
+2025-02-01 23:23:14,132 - INFO - Date: 2024-12-08, Total GGR EUR: 3046.7963511199923, Exchange Rate (GBP): 1.20665, Total GGR GBP: 3676.416817078939
+2025-02-01 23:23:14,139 - INFO - Already there is an existing record for date: 2024-12-08
+2025-02-01 23:23:14,139 - INFO - Total summary calculated successfully for 2024-12-08: {'total_bet': 8098.47, 'total_win': 5051.68, 'total_spins': 14624, 'social_spins': 6923, 'reel_spins': 7701, 'rtp': 62.38, 'ggr_eur': 3046.8, 'ggr_gbp': 3676.42}
+2025-02-01 23:23:14,139 - DEBUG - Calculating RTP and GGR for date: 2024-12-09
+2025-02-01 23:23:14,139 - INFO - Date: 2024-12-09, Total GGR EUR: 870.8622200500031, Exchange Rate (GBP): 1.20783, Total GGR GBP: 1051.8535152429952
+2025-02-01 23:23:14,141 - INFO - Already there is an existing record for date: 2024-12-09
+2025-02-01 23:23:14,141 - INFO - Total summary calculated successfully for 2024-12-09: {'total_bet': 3774.34, 'total_win': 2903.47, 'total_spins': 9536, 'social_spins': 3999, 'reel_spins': 5537, 'rtp': 76.93, 'ggr_eur': 870.86, 'ggr_gbp': 1051.85}
+2025-02-01 23:23:14,141 - DEBUG - Calculating RTP and GGR for date: 2024-12-10
+2025-02-01 23:23:14,141 - INFO - Date: 2024-12-10, Total GGR EUR: 1451.2790224900073, Exchange Rate (GBP): 1.21347, Total GGR GBP: 1761.083555420949
+2025-02-01 23:23:14,146 - INFO - Already there is an existing record for date: 2024-12-10
+2025-02-01 23:23:14,146 - INFO - Total summary calculated successfully for 2024-12-10: {'total_bet': 6135.36, 'total_win': 4684.08, 'total_spins': 11153, 'social_spins': 5698, 'reel_spins': 5455, 'rtp': 76.35, 'ggr_eur': 1451.28, 'ggr_gbp': 1761.08}
+2025-02-01 23:23:14,146 - DEBUG - Calculating RTP and GGR for date: 2024-12-11
+2025-02-01 23:23:14,146 - INFO - Date: 2024-12-11, Total GGR EUR: 1664.7344337939976, Exchange Rate (GBP): 1.21504, Total GGR GBP: 2022.7189264370586
+2025-02-01 23:23:14,148 - INFO - Already there is an existing record for date: 2024-12-11
+2025-02-01 23:23:14,148 - INFO - Total summary calculated successfully for 2024-12-11: {'total_bet': 4319.28, 'total_win': 2654.55, 'total_spins': 9141, 'social_spins': 4411, 'reel_spins': 4730, 'rtp': 61.46, 'ggr_eur': 1664.73, 'ggr_gbp': 2022.72}
+2025-02-01 23:23:14,148 - DEBUG - Calculating RTP and GGR for date: 2024-12-12
+2025-02-01 23:23:14,148 - INFO - Date: 2024-12-12, Total GGR EUR: 719.5958273700007, Exchange Rate (GBP): 1.21034, Total GGR GBP: 870.9556136990067
+2025-02-01 23:23:14,153 - INFO - Already there is an existing record for date: 2024-12-12
+2025-02-01 23:23:14,153 - INFO - Total summary calculated successfully for 2024-12-12: {'total_bet': 7111.63, 'total_win': 6392.04, 'total_spins': 11189, 'social_spins': 5740, 'reel_spins': 5449, 'rtp': 89.88, 'ggr_eur': 719.6, 'ggr_gbp': 870.96}
+2025-02-01 23:23:14,153 - DEBUG - Calculating RTP and GGR for date: 2024-12-13
+2025-02-01 23:23:14,154 - INFO - Date: 2024-12-13, Total GGR EUR: 3942.6832898599678, Exchange Rate (GBP): 1.20108, Total GGR GBP: 4735.47804578501
+2025-02-01 23:23:14,154 - INFO - Already there is an existing record for date: 2024-12-13
+2025-02-01 23:23:14,154 - INFO - Total summary calculated successfully for 2024-12-13: {'total_bet': 13466.56, 'total_win': 9523.88, 'total_spins': 47510, 'social_spins': 4948, 'reel_spins': 42562, 'rtp': 70.72, 'ggr_eur': 3942.68, 'ggr_gbp': 4735.48}
+2025-02-01 23:23:14,154 - DEBUG - Calculating RTP and GGR for date: 2024-12-14
+2025-02-01 23:23:14,154 - INFO - Date: 2024-12-14, Total GGR EUR: 2593.6497738399894, Exchange Rate (GBP): 1.20169, Total GGR GBP: 3116.7629967257767
+2025-02-01 23:23:14,160 - INFO - Already there is an existing record for date: 2024-12-14
+2025-02-01 23:23:14,160 - INFO - Total summary calculated successfully for 2024-12-14: {'total_bet': 8244.43, 'total_win': 5650.78, 'total_spins': 30937, 'social_spins': 3770, 'reel_spins': 27167, 'rtp': 68.54, 'ggr_eur': 2593.65, 'ggr_gbp': 3116.76}
+2025-02-01 23:23:14,162 - DEBUG - Calculating RTP and GGR for date: 2024-12-15
+2025-02-01 23:23:14,162 - INFO - Date: 2024-12-15, Total GGR EUR: 3561.378314450003, Exchange Rate (GBP): 1.20151, Total GGR GBP: 4279.031658594823
+2025-02-01 23:23:14,162 - INFO - Already there is an existing record for date: 2024-12-15
+2025-02-01 23:23:14,162 - INFO - Total summary calculated successfully for 2024-12-15: {'total_bet': 9977.1, 'total_win': 6415.72, 'total_spins': 28554, 'social_spins': 5924, 'reel_spins': 22630, 'rtp': 64.3, 'ggr_eur': 3561.38, 'ggr_gbp': 4279.03}
+2025-02-01 23:23:14,162 - DEBUG - Calculating RTP and GGR for date: 2024-12-16
+2025-02-01 23:23:14,162 - INFO - Date: 2024-12-16, Total GGR EUR: 1664.5899361800011, Exchange Rate (GBP): 1.20671, Total GGR GBP: 2008.677321887769
+2025-02-01 23:23:14,167 - INFO - Already there is an existing record for date: 2024-12-16
+2025-02-01 23:23:14,167 - INFO - Total summary calculated successfully for 2024-12-16: {'total_bet': 5362.67, 'total_win': 3698.08, 'total_spins': 25346, 'social_spins': 7227, 'reel_spins': 18119, 'rtp': 68.96, 'ggr_eur': 1664.59, 'ggr_gbp': 2008.68}
+2025-02-01 23:23:14,167 - DEBUG - Calculating RTP and GGR for date: 2024-12-17
+2025-02-01 23:23:14,167 - INFO - Date: 2024-12-17, Total GGR EUR: 1576.4780505000053, Exchange Rate (GBP): 1.21111, Total GGR GBP: 1909.2883317410613
+2025-02-01 23:23:14,167 - INFO - Already there is an existing record for date: 2024-12-17
+2025-02-01 23:23:14,167 - INFO - Total summary calculated successfully for 2024-12-17: {'total_bet': 4671.82, 'total_win': 3095.35, 'total_spins': 18612, 'social_spins': 5627, 'reel_spins': 12985, 'rtp': 66.26, 'ggr_eur': 1576.48, 'ggr_gbp': 1909.29}
+2025-02-01 23:23:14,167 - DEBUG - Calculating RTP and GGR for date: 2024-12-18
+2025-02-01 23:23:14,167 - INFO - Date: 2024-12-18, Total GGR EUR: 1460.925537159997, Exchange Rate (GBP): 1.21417, Total GGR GBP: 1773.8119594535535
+2025-02-01 23:23:14,174 - INFO - Already there is an existing record for date: 2024-12-18
+2025-02-01 23:23:14,174 - INFO - Total summary calculated successfully for 2024-12-18: {'total_bet': 5024.87, 'total_win': 3563.95, 'total_spins': 18814, 'social_spins': 6086, 'reel_spins': 12728, 'rtp': 70.93, 'ggr_eur': 1460.93, 'ggr_gbp': 1773.81}
+2025-02-01 23:23:14,174 - DEBUG - Calculating RTP and GGR for date: 2024-12-19
+2025-02-01 23:23:14,174 - INFO - Date: 2024-12-19, Total GGR EUR: 220.2017957499993, Exchange Rate (GBP): 1.20577, Total GGR GBP: 265.51271926147666
+2025-02-01 23:23:14,174 - INFO - Already there is an existing record for date: 2024-12-19
+2025-02-01 23:23:14,174 - INFO - Total summary calculated successfully for 2024-12-19: {'total_bet': 7269.46, 'total_win': 7049.26, 'total_spins': 16488, 'social_spins': 5330, 'reel_spins': 11158, 'rtp': 96.97, 'ggr_eur': 220.2, 'ggr_gbp': 265.51}
+2025-02-01 23:23:14,174 - DEBUG - Calculating RTP and GGR for date: 2024-12-20
+2025-02-01 23:23:14,174 - INFO - Date: 2024-12-20, Total GGR EUR: -1369.7060129849979, Exchange Rate (GBP): 1.20524, Total GGR GBP: -1650.824475090039
+2025-02-01 23:23:14,174 - INFO - Already there is an existing record for date: 2024-12-20
+2025-02-01 23:23:14,181 - INFO - Total summary calculated successfully for 2024-12-20: {'total_bet': 8350.45, 'total_win': 9720.16, 'total_spins': 17100, 'social_spins': 8365, 'reel_spins': 8735, 'rtp': 116.4, 'ggr_eur': -1369.71, 'ggr_gbp': -1650.82}
+2025-02-01 23:23:14,181 - DEBUG - Calculating RTP and GGR for date: 2024-12-21
+2025-02-01 23:23:14,181 - INFO - Date: 2024-12-21, Total GGR EUR: 2511.678183590003, Exchange Rate (GBP): 1.20481, Total GGR GBP: 3026.0949923710714
+2025-02-01 23:23:14,182 - INFO - Already there is an existing record for date: 2024-12-21
+2025-02-01 23:23:14,182 - INFO - Total summary calculated successfully for 2024-12-21: {'total_bet': 6972.3, 'total_win': 4460.62, 'total_spins': 9711, 'social_spins': 4715, 'reel_spins': 4996, 'rtp': 63.98, 'ggr_eur': 2511.68, 'ggr_gbp': 3026.09}
+2025-02-01 23:23:14,182 - DEBUG - Calculating RTP and GGR for date: 2024-12-22
+2025-02-01 23:23:14,182 - INFO - Date: 2024-12-22, Total GGR EUR: 2274.4654562800047, Exchange Rate (GBP): 1.20479, Total GGR GBP: 2740.2532370715867
+2025-02-01 23:23:14,182 - INFO - Already there is an existing record for date: 2024-12-22
+2025-02-01 23:23:14,182 - INFO - Total summary calculated successfully for 2024-12-22: {'total_bet': 5768.27, 'total_win': 3493.81, 'total_spins': 11796, 'social_spins': 5433, 'reel_spins': 6363, 'rtp': 60.57, 'ggr_eur': 2274.47, 'ggr_gbp': 2740.25}
+2025-02-01 23:23:14,182 - DEBUG - Calculating RTP and GGR for date: 2024-12-23
+2025-02-01 23:23:14,182 - INFO - Date: 2024-12-23, Total GGR EUR: 1842.5156720800055, Exchange Rate (GBP): 1.20465, Total GGR GBP: 2219.5865043711788
+2025-02-01 23:23:14,187 - INFO - Already there is an existing record for date: 2024-12-23
+2025-02-01 23:23:14,187 - INFO - Total summary calculated successfully for 2024-12-23: {'total_bet': 4219.25, 'total_win': 2376.73, 'total_spins': 11127, 'social_spins': 4937, 'reel_spins': 6190, 'rtp': 56.33, 'ggr_eur': 1842.52, 'ggr_gbp': 2219.59}
+2025-02-01 23:23:14,187 - DEBUG - Calculating RTP and GGR for date: 2024-12-24
+2025-02-01 23:23:14,187 - INFO - Date: 2024-12-24, Total GGR EUR: 3518.7640877199983, Exchange Rate (GBP): 1.20514, Total GGR GBP: 4240.603352674879
+2025-02-01 23:23:14,187 - INFO - Already there is an existing record for date: 2024-12-24
+2025-02-01 23:23:14,187 - INFO - Total summary calculated successfully for 2024-12-24: {'total_bet': 10898.31, 'total_win': 7379.55, 'total_spins': 13316, 'social_spins': 6092, 'reel_spins': 7224, 'rtp': 67.71, 'ggr_eur': 3518.76, 'ggr_gbp': 4240.6}
+2025-02-01 23:23:14,187 - DEBUG - Calculating RTP and GGR for date: 2024-12-25
+2025-02-01 23:23:14,187 - INFO - Date: 2024-12-25, Total GGR EUR: 1668.3674780830015, Exchange Rate (GBP): 1.20619, Total GGR GBP: 2012.3681683889358
+2025-02-01 23:23:14,195 - INFO - Already there is an existing record for date: 2024-12-25
+2025-02-01 23:23:14,195 - INFO - Total summary calculated successfully for 2024-12-25: {'total_bet': 5549.97, 'total_win': 3881.6, 'total_spins': 12057, 'social_spins': 5693, 'reel_spins': 6364, 'rtp': 69.94, 'ggr_eur': 1668.37, 'ggr_gbp': 2012.37}
+2025-02-01 23:23:14,195 - DEBUG - Calculating RTP and GGR for date: 2024-12-26
+2025-02-01 23:23:14,195 - INFO - Date: 2024-12-26, Total GGR EUR: 3632.4067365599903, Exchange Rate (GBP): 1.20222, Total GGR GBP: 4366.952026827152
+2025-02-01 23:23:14,196 - INFO - Already there is an existing record for date: 2024-12-26
+2025-02-01 23:23:14,196 - INFO - Total summary calculated successfully for 2024-12-26: {'total_bet': 9578.03, 'total_win': 5945.62, 'total_spins': 12434, 'social_spins': 6744, 'reel_spins': 5690, 'rtp': 62.08, 'ggr_eur': 3632.41, 'ggr_gbp': 4366.95}
+2025-02-01 23:23:14,196 - DEBUG - Calculating RTP and GGR for date: 2024-12-27
+2025-02-01 23:23:14,196 - INFO - Date: 2024-12-27, Total GGR EUR: 1069.9943510900011, Exchange Rate (GBP): 1.20553, Total GGR GBP: 1289.910290069529
+2025-02-01 23:23:14,196 - INFO - Already there is an existing record for date: 2024-12-27
+2025-02-01 23:23:14,196 - INFO - Total summary calculated successfully for 2024-12-27: {'total_bet': 6078.7, 'total_win': 5008.7, 'total_spins': 12099, 'social_spins': 6447, 'reel_spins': 5652, 'rtp': 82.4, 'ggr_eur': 1069.99, 'ggr_gbp': 1289.91}
+2025-02-01 23:23:14,196 - DEBUG - Calculating RTP and GGR for date: 2024-12-28
+2025-02-01 23:23:14,196 - INFO - Date: 2024-12-28, Total GGR EUR: 935.1315285199989, Exchange Rate (GBP): 1.20553, Total GGR GBP: 1127.3291115767142
+2025-02-01 23:23:14,203 - INFO - Already there is an existing record for date: 2024-12-28
+2025-02-01 23:23:14,203 - INFO - Total summary calculated successfully for 2024-12-28: {'total_bet': 4078.24, 'total_win': 3143.1, 'total_spins': 12701, 'social_spins': 6709, 'reel_spins': 5992, 'rtp': 77.07, 'ggr_eur': 935.13, 'ggr_gbp': 1127.33}
+2025-02-01 23:23:14,203 - DEBUG - Calculating RTP and GGR for date: 2024-12-29
+2025-02-01 23:23:14,203 - INFO - Date: 2024-12-29, Total GGR EUR: 907.8344726600021, Exchange Rate (GBP): 1.20608, Total GGR GBP: 1094.9210007857755
+2025-02-01 23:23:14,206 - INFO - Already there is an existing record for date: 2024-12-29
+2025-02-01 23:23:14,206 - INFO - Total summary calculated successfully for 2024-12-29: {'total_bet': 3643.36, 'total_win': 2735.53, 'total_spins': 12124, 'social_spins': 5794, 'reel_spins': 6330, 'rtp': 75.08, 'ggr_eur': 907.83, 'ggr_gbp': 1094.92}
+2025-02-01 23:23:14,206 - DEBUG - Calculating RTP and GGR for date: 2024-12-30
+2025-02-01 23:23:14,206 - INFO - Date: 2024-12-30, Total GGR EUR: 1926.2389550000057, Exchange Rate (GBP): 1.2059, Total GGR GBP: 2322.851555834507
+2025-02-01 23:23:14,210 - INFO - Already there is an existing record for date: 2024-12-30
+2025-02-01 23:23:14,210 - INFO - Total summary calculated successfully for 2024-12-30: {'total_bet': 5957.65, 'total_win': 4031.41, 'total_spins': 13748, 'social_spins': 6389, 'reel_spins': 7359, 'rtp': 67.67, 'ggr_eur': 1926.24, 'ggr_gbp': 2322.85}
+2025-02-01 23:23:14,210 - DEBUG - Calculating RTP and GGR for date: 2024-12-31
+2025-02-01 23:23:14,210 - INFO - Date: 2024-12-31, Total GGR EUR: 2654.2858160399974, Exchange Rate (GBP): 1.2059, Total GGR GBP: 3200.8032655626325
+2025-02-01 23:23:14,210 - INFO - Already there is an existing record for date: 2024-12-31
+2025-02-01 23:23:14,210 - INFO - Total summary calculated successfully for 2024-12-31: {'total_bet': 8790.16, 'total_win': 6135.87, 'total_spins': 13622, 'social_spins': 8546, 'reel_spins': 5076, 'rtp': 69.8, 'ggr_eur': 2654.29, 'ggr_gbp': 3200.8}
+2025-02-01 23:23:14,210 - DEBUG - Calculating RTP and GGR for date: 2025-01-01
+2025-02-01 23:23:14,210 - INFO - Date: 2025-01-01, Total GGR EUR: 1058.0742995699993, Exchange Rate (GBP): 1.20934, Total GGR GBP: 1279.571573441983
+2025-02-01 23:23:14,214 - INFO - Already there is an existing record for date: 2025-01-01
+2025-02-01 23:23:14,215 - INFO - Total summary calculated successfully for 2025-01-01: {'total_bet': 9008.9, 'total_win': 7950.83, 'total_spins': 16356, 'social_spins': 6738, 'reel_spins': 9618, 'rtp': 88.26, 'ggr_eur': 1058.07, 'ggr_gbp': 1279.57}
+2025-02-01 23:23:14,215 - DEBUG - Calculating RTP and GGR for date: 2025-01-02
+2025-02-01 23:23:14,216 - INFO - Date: 2025-01-02, Total GGR EUR: 2751.2773040999955, Exchange Rate (GBP): 1.20567, Total GGR GBP: 3317.1325072342415
+2025-02-01 23:23:14,216 - INFO - Already there is an existing record for date: 2025-01-02
+2025-02-01 23:23:14,216 - INFO - Total summary calculated successfully for 2025-01-02: {'total_bet': 10298.9, 'total_win': 7547.63, 'total_spins': 16535, 'social_spins': 4970, 'reel_spins': 11565, 'rtp': 73.29, 'ggr_eur': 2751.28, 'ggr_gbp': 3317.13}
+2025-02-01 23:23:14,216 - DEBUG - Calculating RTP and GGR for date: 2025-01-03
+2025-02-01 23:23:14,216 - INFO - Date: 2025-01-03, Total GGR EUR: -3446.961455080007, Exchange Rate (GBP): 1.20454, Total GGR GBP: -4152.002951102071
+2025-02-01 23:23:14,216 - INFO - Already there is an existing record for date: 2025-01-03
+2025-02-01 23:23:14,222 - INFO - Total summary calculated successfully for 2025-01-03: {'total_bet': 31034.26, 'total_win': 34481.22, 'total_spins': 23274, 'social_spins': 8184, 'reel_spins': 15090, 'rtp': 111.11, 'ggr_eur': -3446.96, 'ggr_gbp': -4152.0}
+2025-02-01 23:23:14,222 - DEBUG - Calculating RTP and GGR for date: 2025-01-04
+2025-02-01 23:23:14,222 - INFO - Date: 2025-01-04, Total GGR EUR: 1475.6305738199826, Exchange Rate (GBP): 1.20454, Total GGR GBP: 1777.4560513891217
+2025-02-01 23:23:14,224 - INFO - Already there is an existing record for date: 2025-01-04
+2025-02-01 23:23:14,224 - INFO - Total summary calculated successfully for 2025-01-04: {'total_bet': 10582.45, 'total_win': 9106.82, 'total_spins': 20169, 'social_spins': 7944, 'reel_spins': 12225, 'rtp': 86.06, 'ggr_eur': 1475.63, 'ggr_gbp': 1777.46}
+2025-02-01 23:23:14,224 - DEBUG - Calculating RTP and GGR for date: 2025-01-05
+2025-02-01 23:23:14,224 - INFO - Date: 2025-01-05, Total GGR EUR: 3940.564059500015, Exchange Rate (GBP): 1.20585, Total GGR GBP: 4751.729171148093
+2025-02-01 23:23:14,230 - INFO - Already there is an existing record for date: 2025-01-05
+2025-02-01 23:23:14,230 - INFO - Total summary calculated successfully for 2025-01-05: {'total_bet': 17464.6, 'total_win': 13524.03, 'total_spins': 24162, 'social_spins': 9803, 'reel_spins': 14359, 'rtp': 77.44, 'ggr_eur': 3940.56, 'ggr_gbp': 4751.73}
+2025-02-01 23:23:14,230 - DEBUG - Calculating RTP and GGR for date: 2025-01-06
+2025-02-01 23:23:14,230 - INFO - Date: 2025-01-06, Total GGR EUR: 3573.604646599979, Exchange Rate (GBP): 1.20468, Total GGR GBP: 4305.050045666062
+2025-02-01 23:23:14,230 - INFO - Already there is an existing record for date: 2025-01-06
+2025-02-01 23:23:14,230 - INFO - Total summary calculated successfully for 2025-01-06: {'total_bet': 13401.7, 'total_win': 9828.09, 'total_spins': 24338, 'social_spins': 5688, 'reel_spins': 18650, 'rtp': 73.33, 'ggr_eur': 3573.6, 'ggr_gbp': 4305.05}
+2025-02-01 23:23:14,230 - DEBUG - Calculating RTP and GGR for date: 2025-01-07
+2025-02-01 23:23:14,230 - INFO - Date: 2025-01-07, Total GGR EUR: 1995.6055401099993, Exchange Rate (GBP): 1.20617, Total GGR GBP: 2407.039534314478
+2025-02-01 23:23:14,236 - INFO - Already there is an existing record for date: 2025-01-07
+2025-02-01 23:23:14,236 - INFO - Total summary calculated successfully for 2025-01-07: {'total_bet': 8569.24, 'total_win': 6573.63, 'total_spins': 17428, 'social_spins': 6021, 'reel_spins': 11407, 'rtp': 76.71, 'ggr_eur': 1995.61, 'ggr_gbp': 2407.04}
+2025-02-01 23:23:14,236 - DEBUG - Calculating RTP and GGR for date: 2025-01-08
+2025-02-01 23:23:14,236 - INFO - Date: 2025-01-08, Total GGR EUR: -1099.7570631699928, Exchange Rate (GBP): 1.19827, Total GGR GBP: -1317.8058960847072
+2025-02-01 23:23:14,238 - INFO - Already there is an existing record for date: 2025-01-08
+2025-02-01 23:23:14,238 - INFO - Total summary calculated successfully for 2025-01-08: {'total_bet': 8246.98, 'total_win': 9346.74, 'total_spins': 15440, 'social_spins': 6471, 'reel_spins': 8969, 'rtp': 113.34, 'ggr_eur': -1099.76, 'ggr_gbp': -1317.81}
+2025-02-01 23:23:14,238 - DEBUG - Calculating RTP and GGR for date: 2025-01-09
+2025-02-01 23:23:14,238 - INFO - Date: 2025-01-09, Total GGR EUR: 1945.3876463699944, Exchange Rate (GBP): 1.19438, Total GGR GBP: 2323.5320970713938
+2025-02-01 23:23:14,238 - INFO - Already there is an existing record for date: 2025-01-09
+2025-02-01 23:23:14,238 - INFO - Total summary calculated successfully for 2025-01-09: {'total_bet': 9829.19, 'total_win': 7883.8, 'total_spins': 20101, 'social_spins': 8321, 'reel_spins': 11780, 'rtp': 80.21, 'ggr_eur': 1945.39, 'ggr_gbp': 2323.53}
+2025-02-01 23:23:14,238 - DEBUG - Calculating RTP and GGR for date: 2025-01-10
+2025-02-01 23:23:14,238 - INFO - Date: 2025-01-10, Total GGR EUR: 3924.172460329991, Exchange Rate (GBP): 1.19009, Total GGR GBP: 4670.118403314119
+2025-02-01 23:23:14,244 - INFO - Already there is an existing record for date: 2025-01-10
+2025-02-01 23:23:14,244 - INFO - Total summary calculated successfully for 2025-01-10: {'total_bet': 10519.78, 'total_win': 6595.6, 'total_spins': 17145, 'social_spins': 3710, 'reel_spins': 13435, 'rtp': 62.7, 'ggr_eur': 3924.17, 'ggr_gbp': 4670.12}
+2025-02-01 23:23:14,244 - DEBUG - Calculating RTP and GGR for date: 2025-01-11
+2025-02-01 23:23:14,244 - INFO - Date: 2025-01-11, Total GGR EUR: 1823.2162100099831, Exchange Rate (GBP): 1.19009, Total GGR GBP: 2169.7913793707808
+2025-02-01 23:23:14,250 - INFO - Already there is an existing record for date: 2025-01-11
+2025-02-01 23:23:14,251 - INFO - Total summary calculated successfully for 2025-01-11: {'total_bet': 10859.69, 'total_win': 9036.48, 'total_spins': 19625, 'social_spins': 4815, 'reel_spins': 14810, 'rtp': 83.21, 'ggr_eur': 1823.22, 'ggr_gbp': 2169.79}
+2025-02-01 23:23:14,251 - DEBUG - Calculating RTP and GGR for date: 2025-01-12
+2025-02-01 23:23:14,251 - INFO - Date: 2025-01-12, Total GGR EUR: 1961.0542739999873, Exchange Rate (GBP): 1.19133, Total GGR GBP: 2336.262788244405
+2025-02-01 23:23:14,253 - INFO - Already there is an existing record for date: 2025-01-12
+2025-02-01 23:23:14,253 - INFO - Total summary calculated successfully for 2025-01-12: {'total_bet': 12536.43, 'total_win': 10575.37, 'total_spins': 15322, 'social_spins': 4466, 'reel_spins': 10856, 'rtp': 84.36, 'ggr_eur': 1961.05, 'ggr_gbp': 2336.26}
+2025-02-01 23:23:14,253 - DEBUG - Calculating RTP and GGR for date: 2025-01-13
+2025-02-01 23:23:14,253 - INFO - Date: 2025-01-13, Total GGR EUR: 3394.647880960012, Exchange Rate (GBP): 1.19159, Total GGR GBP: 4045.0284684731405
+2025-02-01 23:23:14,259 - INFO - Already there is an existing record for date: 2025-01-13
+2025-02-01 23:23:14,259 - INFO - Total summary calculated successfully for 2025-01-13: {'total_bet': 19831.72, 'total_win': 16437.08, 'total_spins': 14772, 'social_spins': 3815, 'reel_spins': 10957, 'rtp': 82.88, 'ggr_eur': 3394.65, 'ggr_gbp': 4045.03}
+2025-02-01 23:23:14,259 - DEBUG - Calculating RTP and GGR for date: 2025-01-14
+2025-02-01 23:23:14,259 - INFO - Date: 2025-01-14, Total GGR EUR: 3072.0302339200007, Exchange Rate (GBP): 1.18481, Total GGR GBP: 3639.772141450756
+2025-02-01 23:23:14,259 - INFO - Already there is an existing record for date: 2025-01-14
+2025-02-01 23:23:14,259 - INFO - Total summary calculated successfully for 2025-01-14: {'total_bet': 9092.98, 'total_win': 6020.95, 'total_spins': 17896, 'social_spins': 7683, 'reel_spins': 10213, 'rtp': 66.22, 'ggr_eur': 3072.03, 'ggr_gbp': 3639.77}
+2025-02-01 23:23:14,259 - DEBUG - Calculating RTP and GGR for date: 2025-01-15
+2025-02-01 23:23:14,259 - INFO - Date: 2025-01-15, Total GGR EUR: 3011.3968580500004, Exchange Rate (GBP): 1.18918, Total GGR GBP: 3581.092915655899
+2025-02-01 23:23:14,264 - INFO - Already there is an existing record for date: 2025-01-15
+2025-02-01 23:23:14,264 - INFO - Total summary calculated successfully for 2025-01-15: {'total_bet': 9342.04, 'total_win': 6330.65, 'total_spins': 20458, 'social_spins': 11181, 'reel_spins': 9277, 'rtp': 67.77, 'ggr_eur': 3011.4, 'ggr_gbp': 3581.09}
+2025-02-01 23:23:14,264 - DEBUG - Calculating RTP and GGR for date: 2025-01-16
+2025-02-01 23:23:14,264 - INFO - Date: 2025-01-16, Total GGR EUR: 3385.128217659998, Exchange Rate (GBP): 1.18764, Total GGR GBP: 4020.31367642172
+2025-02-01 23:23:14,264 - INFO - Already there is an existing record for date: 2025-01-16
+2025-02-01 23:23:14,264 - INFO - Total summary calculated successfully for 2025-01-16: {'total_bet': 10401.57, 'total_win': 7016.45, 'total_spins': 22632, 'social_spins': 12961, 'reel_spins': 9671, 'rtp': 67.46, 'ggr_eur': 3385.13, 'ggr_gbp': 4020.31}
+2025-02-01 23:23:14,264 - DEBUG - Calculating RTP and GGR for date: 2025-01-17
+2025-02-01 23:23:14,264 - INFO - Date: 2025-01-17, Total GGR EUR: -1775.8430925199646, Exchange Rate (GBP): 1.17989, Total GGR GBP: -2095.2995064333813
+2025-02-01 23:23:14,274 - INFO - Already there is an existing record for date: 2025-01-17
+2025-02-01 23:23:14,274 - INFO - Total summary calculated successfully for 2025-01-17: {'total_bet': 24727.16, 'total_win': 26503.0, 'total_spins': 23600, 'social_spins': 12241, 'reel_spins': 11359, 'rtp': 107.18, 'ggr_eur': -1775.84, 'ggr_gbp': -2095.3}
+2025-02-01 23:23:14,274 - DEBUG - Calculating RTP and GGR for date: 2025-01-18
+2025-02-01 23:23:14,274 - INFO - Date: 2025-01-18, Total GGR EUR: 3550.964888840006, Exchange Rate (GBP): 1.17989, Total GGR GBP: 4189.7479626934355
+2025-02-01 23:23:14,274 - INFO - Already there is an existing record for date: 2025-01-18
+2025-02-01 23:23:14,278 - INFO - Total summary calculated successfully for 2025-01-18: {'total_bet': 12408.48, 'total_win': 8857.52, 'total_spins': 20695, 'social_spins': 9815, 'reel_spins': 10880, 'rtp': 71.38, 'ggr_eur': 3550.96, 'ggr_gbp': 4189.75}
+2025-02-01 23:23:14,278 - DEBUG - Calculating RTP and GGR for date: 2025-01-19
+2025-02-01 23:23:14,278 - INFO - Date: 2025-01-19, Total GGR EUR: 2863.6800660000135, Exchange Rate (GBP): 1.18452, Total GGR GBP: 3392.086311778336
+2025-02-01 23:23:14,280 - INFO - Already there is an existing record for date: 2025-01-19
+2025-02-01 23:23:14,280 - INFO - Total summary calculated successfully for 2025-01-19: {'total_bet': 12371.42, 'total_win': 9507.74, 'total_spins': 24124, 'social_spins': 12895, 'reel_spins': 11229, 'rtp': 76.85, 'ggr_eur': 2863.68, 'ggr_gbp': 3392.09}
+2025-02-01 23:23:14,280 - DEBUG - Calculating RTP and GGR for date: 2025-01-20
+2025-02-01 23:23:14,280 - INFO - Date: 2025-01-20, Total GGR EUR: 3458.0661567900243, Exchange Rate (GBP): 1.18329, Total GGR GBP: 4091.8951026680675
+2025-02-01 23:23:14,280 - INFO - Already there is an existing record for date: 2025-01-20
+2025-02-01 23:23:14,285 - INFO - Total summary calculated successfully for 2025-01-20: {'total_bet': 13638.33, 'total_win': 10180.27, 'total_spins': 17842, 'social_spins': 8592, 'reel_spins': 9250, 'rtp': 74.64, 'ggr_eur': 3458.07, 'ggr_gbp': 4091.9}
+2025-02-01 23:23:14,285 - DEBUG - Calculating RTP and GGR for date: 2025-01-21
+2025-02-01 23:23:14,285 - INFO - Date: 2025-01-21, Total GGR EUR: 6682.478627539967, Exchange Rate (GBP): 1.18567, Total GGR GBP: 7923.214434315313
+2025-02-01 23:23:14,287 - INFO - Already there is an existing record for date: 2025-01-21
+2025-02-01 23:23:14,287 - INFO - Total summary calculated successfully for 2025-01-21: {'total_bet': 23622.99, 'total_win': 16940.51, 'total_spins': 20571, 'social_spins': 7906, 'reel_spins': 12665, 'rtp': 71.71, 'ggr_eur': 6682.48, 'ggr_gbp': 7923.21}
+2025-02-01 23:23:14,287 - DEBUG - Calculating RTP and GGR for date: 2025-01-22
+2025-02-01 23:23:14,287 - INFO - Date: 2025-01-22, Total GGR EUR: 4556.46688199999, Exchange Rate (GBP): 1.18305, Total GGR GBP: 5390.528144750087
+2025-02-01 23:23:14,292 - INFO - Already there is an existing record for date: 2025-01-22
+2025-02-01 23:23:14,292 - INFO - Total summary calculated successfully for 2025-01-22: {'total_bet': 14211.01, 'total_win': 9654.54, 'total_spins': 22769, 'social_spins': 8696, 'reel_spins': 14073, 'rtp': 67.94, 'ggr_eur': 4556.47, 'ggr_gbp': 5390.53}
+2025-02-01 23:23:14,292 - DEBUG - Calculating RTP and GGR for date: 2025-01-23
+2025-02-01 23:23:14,292 - INFO - Date: 2025-01-23, Total GGR EUR: 3349.584664730015, Exchange Rate (GBP): 1.18592, Total GGR GBP: 3972.3394455966195
+2025-02-01 23:23:14,294 - INFO - Already there is an existing record for date: 2025-01-23
+2025-02-01 23:23:14,294 - INFO - Total summary calculated successfully for 2025-01-23: {'total_bet': 12481.65, 'total_win': 9132.06, 'total_spins': 18867, 'social_spins': 5834, 'reel_spins': 13033, 'rtp': 73.16, 'ggr_eur': 3349.58, 'ggr_gbp': 3972.34}
+2025-02-01 23:23:14,294 - DEBUG - Calculating RTP and GGR for date: 2025-01-24
+2025-02-01 23:23:14,294 - INFO - Date: 2025-01-24, Total GGR EUR: 2905.63842214999, Exchange Rate (GBP): 1.18859, Total GGR GBP: 3453.6127721832568
+2025-02-01 23:23:14,299 - INFO - Already there is an existing record for date: 2025-01-24
+2025-02-01 23:23:14,299 - INFO - Total summary calculated successfully for 2025-01-24: {'total_bet': 17974.15, 'total_win': 15068.51, 'total_spins': 25388, 'social_spins': 5878, 'reel_spins': 19510, 'rtp': 83.83, 'ggr_eur': 2905.64, 'ggr_gbp': 3453.61}
+2025-02-01 23:23:14,299 - DEBUG - Calculating RTP and GGR for date: 2025-01-25
+2025-02-01 23:23:14,301 - INFO - Date: 2025-01-25, Total GGR EUR: 8130.617564500008, Exchange Rate (GBP): 1.18859, Total GGR GBP: 9663.970730989064
+2025-02-01 23:23:14,301 - INFO - Already there is an existing record for date: 2025-01-25
+2025-02-01 23:23:14,301 - INFO - Total summary calculated successfully for 2025-01-25: {'total_bet': 22547.39, 'total_win': 14416.77, 'total_spins': 21022, 'social_spins': 7352, 'reel_spins': 13670, 'rtp': 63.94, 'ggr_eur': 8130.62, 'ggr_gbp': 9663.97}
+2025-02-01 23:23:14,301 - DEBUG - Calculating RTP and GGR for date: 2025-01-26
+2025-02-01 23:23:14,301 - INFO - Date: 2025-01-26, Total GGR EUR: 1212.702186659999, Exchange Rate (GBP): 1.19021, Total GGR GBP: 1443.3702695845973
+2025-02-01 23:23:14,306 - INFO - Already there is an existing record for date: 2025-01-26
+2025-02-01 23:23:14,306 - INFO - Total summary calculated successfully for 2025-01-26: {'total_bet': 11154.99, 'total_win': 9942.28, 'total_spins': 18659, 'social_spins': 4781, 'reel_spins': 13878, 'rtp': 89.13, 'ggr_eur': 1212.7, 'ggr_gbp': 1443.37}
+2025-02-01 23:23:14,306 - DEBUG - Calculating RTP and GGR for date: 2025-01-27
+2025-02-01 23:23:14,306 - INFO - Date: 2025-01-27, Total GGR EUR: 5605.637515480003, Exchange Rate (GBP): 1.19238, Total GGR GBP: 6684.050060708046
+2025-02-01 23:23:14,306 - INFO - Already there is an existing record for date: 2025-01-27
+2025-02-01 23:23:14,306 - INFO - Total summary calculated successfully for 2025-01-27: {'total_bet': 15136.24, 'total_win': 9530.6, 'total_spins': 15742, 'social_spins': 5081, 'reel_spins': 10661, 'rtp': 62.97, 'ggr_eur': 5605.64, 'ggr_gbp': 6684.05}
+2025-02-01 23:23:14,306 - DEBUG - Calculating RTP and GGR for date: 2025-01-28
+2025-02-01 23:23:14,306 - INFO - Date: 2025-01-28, Total GGR EUR: 2834.2251232500457, Exchange Rate (GBP): 1.19304, Total GGR GBP: 3381.3439410422347
+2025-02-01 23:23:14,315 - INFO - Already there is an existing record for date: 2025-01-28
+2025-02-01 23:23:14,315 - INFO - Total summary calculated successfully for 2025-01-28: {'total_bet': 24812.4, 'total_win': 21978.18, 'total_spins': 18763, 'social_spins': 7469, 'reel_spins': 11294, 'rtp': 88.58, 'ggr_eur': 2834.23, 'ggr_gbp': 3381.34}
+2025-02-01 23:23:14,315 - DEBUG - Calculating RTP and GGR for date: 2025-01-29
+2025-02-01 23:23:14,315 - INFO - Date: 2025-01-29, Total GGR EUR: 2987.2925927999877, Exchange Rate (GBP): 1.19474, Total GGR GBP: 3569.037952321857
+2025-02-01 23:23:14,315 - INFO - Already there is an existing record for date: 2025-01-29
+2025-02-01 23:23:14,315 - INFO - Total summary calculated successfully for 2025-01-29: {'total_bet': 12778.54, 'total_win': 9791.25, 'total_spins': 18734, 'social_spins': 7957, 'reel_spins': 10777, 'rtp': 76.62, 'ggr_eur': 2987.29, 'ggr_gbp': 3569.04}
+2025-02-01 23:23:14,315 - DEBUG - Calculating RTP and GGR for date: 2025-01-30
+2025-02-01 23:23:14,315 - INFO - Date: 2025-01-30, Total GGR EUR: 4564.571459839994, Exchange Rate (GBP): 1.19489, Total GGR GBP: 5454.16079164821
+2025-02-01 23:23:14,320 - INFO - Already there is an existing record for date: 2025-01-30
+2025-02-01 23:23:14,320 - INFO - Total summary calculated successfully for 2025-01-30: {'total_bet': 19055.54, 'total_win': 14490.97, 'total_spins': 22986, 'social_spins': 11818, 'reel_spins': 11168, 'rtp': 76.05, 'ggr_eur': 4564.57, 'ggr_gbp': 5454.16}
+2025-02-01 23:23:14,320 - DEBUG - Calculating RTP and GGR for date: 2025-01-31
+2025-02-01 23:23:14,320 - INFO - Date: 2025-01-31, Total GGR EUR: 7616.856289720014, Exchange Rate (GBP): 1.19676, Total GGR GBP: 9115.548933285323
+2025-02-01 23:23:14,320 - INFO - Already there is an existing record for date: 2025-01-31
+2025-02-01 23:23:14,320 - INFO - Total summary calculated successfully for 2025-01-31: {'total_bet': 20798.46, 'total_win': 13181.61, 'total_spins': 22961, 'social_spins': 10065, 'reel_spins': 12896, 'rtp': 63.38, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55}
+2025-02-01 23:23:15,600 - INFO - Total summary calculation completed for all dates.
+2025-02-01 23:23:16,007 - INFO - 127.0.0.1 - - [01/Feb/2025 23:23:16] "GET /calculate_total_summary HTTP/1.1" 200 -

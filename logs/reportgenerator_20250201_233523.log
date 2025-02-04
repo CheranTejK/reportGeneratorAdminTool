@@ -1,0 +1,26 @@
+2025-02-01 23:35:23,901 - WARNING -  * Debugger is active!
+2025-02-01 23:35:23,904 - INFO -  * Debugger PIN: 308-186-142
+2025-02-01 23:35:23,974 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:23] "GET / HTTP/1.1" 200 -
+2025-02-01 23:35:23,977 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:23] "GET / HTTP/1.1" 200 -
+2025-02-01 23:35:24,038 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:24] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-02-01 23:35:24,045 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-01 23:35:30,412 - ERROR - Error: 1524 (HY000): Plugin 'mysql_native_password' is not loaded
+2025-02-01 23:35:30,414 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:30] "POST /login HTTP/1.1" 200 -
+2025-02-01 23:35:30,440 - INFO - No missing dates found in TotalSummaryData.
+2025-02-01 23:35:30,775 - INFO - Total summary fetched successfully: {'total_bet': 2475609.5, 'total_win': 1962236.11, 'total_spins': 5784825, 'reel_spins': 3188028, 'social_spins': 2596797, 'ggr_eur': 513373.7, 'ggr_gbp': 614042.1, 'total_players': 96509, 'rtp': 79.26, 'max_date': '2025-01-31', 'min_date': '2024-09-19'}
+2025-02-01 23:35:30,775 - INFO - Latest summary fetched successfully: {'total_bet': 20798.5, 'total_win': 13181.6, 'total_spins': 22961, 'reel_spins': 12896, 'social_spins': 10065, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55, 'total_players': 594, 'rtp': 63.38, 'max_date': '2025-01-31'}
+2025-02-01 23:35:30,775 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:30] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-01 23:35:33,692 - INFO - Latest date from database: 2025-01-31
+2025-02-01 23:35:33,703 - INFO - Rates for 2025-01-31 already exist in the database. Returning existing rates.
+2025-02-01 23:35:33,725 - INFO - Social currencies updated successfully.
+2025-02-01 23:35:33,742 - INFO - Latest data loaded successfully: {'latest_data': '2025-01-31', 'total_bet': 20798.46, 'total_win': 13181.61, 'reel_spins': 12896, 'social_spins': 10065, 'total_spins': 22961, 'rtp': 63.38, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55}
+2025-02-01 23:35:33,742 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:33] "GET /load_latest_data HTTP/1.1" 200 -
+2025-02-01 23:35:42,229 - INFO - No missing dates found in TotalSummaryData.
+2025-02-01 23:35:42,500 - INFO - Total summary fetched successfully: {'total_bet': 2475609.5, 'total_win': 1962236.11, 'total_spins': 5784825, 'reel_spins': 3188028, 'social_spins': 2596797, 'ggr_eur': 513373.7, 'ggr_gbp': 614042.1, 'total_players': 96509, 'rtp': 79.26, 'max_date': '2025-01-31', 'min_date': '2024-09-19'}
+2025-02-01 23:35:42,500 - INFO - Latest summary fetched successfully: {'total_bet': 20798.5, 'total_win': 13181.6, 'total_spins': 22961, 'reel_spins': 12896, 'social_spins': 10065, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55, 'total_players': 594, 'rtp': 63.38, 'max_date': '2025-01-31'}
+2025-02-01 23:35:42,500 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:42] "GET /get_total_summary_data HTTP/1.1" 200 -
+2025-02-01 23:35:44,040 - INFO - Latest date from database: 2025-01-31
+2025-02-01 23:35:44,044 - INFO - Rates for 2025-01-31 already exist in the database. Returning existing rates.
+2025-02-01 23:35:44,065 - INFO - Social currencies updated successfully.
+2025-02-01 23:35:44,080 - INFO - Latest data loaded successfully: {'latest_data': '2025-01-31', 'total_bet': 20798.46, 'total_win': 13181.61, 'reel_spins': 12896, 'social_spins': 10065, 'total_spins': 22961, 'rtp': 63.38, 'ggr_eur': 7616.86, 'ggr_gbp': 9115.55}
+2025-02-01 23:35:44,080 - INFO - 127.0.0.1 - - [01/Feb/2025 23:35:44] "GET /load_latest_data HTTP/1.1" 200 -
