@@ -1,0 +1,12 @@
+2025-02-04 21:47:09,086 - WARNING -  * Debugger is active!
+2025-02-04 21:47:09,089 - INFO -  * Debugger PIN: 308-186-142
+2025-02-04 21:47:09,611 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:09] "GET / HTTP/1.1" 200 -
+2025-02-04 21:47:09,706 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-02-04 21:47:09,880 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-02-04 21:47:09,909 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 21:47:14,876 - ERROR - Error: 1045 (28000): Access denied for user 'cheran'@'localhost' (using password: YES)
+2025-02-04 21:47:14,876 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:14] "POST /login HTTP/1.1" 200 -
+2025-02-04 21:47:14,926 - INFO - No missing dates found in TotalSummaryData.
+2025-02-04 21:47:15,328 - INFO - Total summary fetched successfully: {'total_bet': 2523125.16, 'total_win': 2008848.54, 'total_spins': 5829721, 'reel_spins': 3212067, 'social_spins': 2617654, 'ggr_eur': 514276.88, 'ggr_gbp': 615115.48, 'total_players': 97382, 'rtp': 79.62, 'max_date': '2025-02-03', 'min_date': '2024-09-19'}
+2025-02-04 21:47:15,330 - INFO - Latest summary fetched successfully: {'total_bet': 7155.46, 'total_win': 5892.23, 'total_spins': 12676, 'reel_spins': 6069, 'social_spins': 6607, 'ggr_eur': 1263.22, 'ggr_gbp': 1520.6, 'total_players': 407, 'rtp': 82.35, 'max_date': '2025-02-03'}
+2025-02-04 21:47:15,330 - INFO - 127.0.0.1 - - [04/Feb/2025 21:47:15] "GET /get_total_summary_data HTTP/1.1" 200 -
