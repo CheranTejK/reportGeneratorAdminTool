@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     formData.append("files", file);
                 }
 
-                const response = await fetch("/upload", {
+                const response = await fetch("/generate_all_reports", {
                     method: "POST",
                     body: formData
                 });

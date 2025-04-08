@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 social_currencies = {
     'SSC', 'WOC', 'SC', 'SC.', 'YOH', 'GEM', 'BK.', 'GHC',
     'GOC', 'VBC', 'GCC', 'GLD', 'GC', 'GC.', 'TOK', 'FTN',
-    'USDT', 'BT.', 'mBTC', 'FC', 'VSC', 'WOW'
+    'USDT', 'BT.', 'mBTC', 'FC', 'VSC', 'WOW', 'FC.'
 }
 
 #Generate all reports
@@ -85,11 +85,22 @@ def generate_all_reports():
 
                 for _, row in data.iterrows():
                     currency = row['Currency']
+                    site_name = row['Site Name'].strip()
+
+                    # If currency is "FC" and Site Name is "Fortune Coins", change it to "FC."
+                    if currency == "FC" and site_name == "Fortune Coins":
+                        currency = "FC."
                     fx_rate = all_rates[date].get(currency, None)
 
                     if fx_rate is None:
                         logger.error(f"Exchange rate for currency '{currency}' not found on date {row['Date']}. Setting fx_rate to 0.0")
                         fx_rate = 0.0
+
+                    #Check conditions to skip adding the record
+                    if row['Site Name'].strip() in ["ownlobby", "Netgaming( Internal )"] or row[
+                        'Username'].upper().endswith("_OWN"):
+                        logger.info(f"Skipping record for Username: {row['Username']}, Site Name: {row['Site Name']}")
+                        continue
 
                     existing_record = db.session.query(ConsolidatedData).filter_by(
                         date=row['Date'].date() if isinstance(row['Date'], pd.Timestamp) else row['Date'],
@@ -101,27 +112,26 @@ def generate_all_reports():
                         logger.info(f"Duplicate found for {row['Username']} on {row['Date']}. Skipping.")
                         continue
 
-                    if not existing_record:
-                        consolidated_data = ConsolidatedData(
-                            date=row['Date'].date() if isinstance(row['Date'], pd.Timestamp) else row['Date'],
-                            username=row['Username'],
-                            account_id=row['Account_ID'],
-                            game_name=row['Game Name'],
-                            game_id=row['Game_ID'],
-                            currency=row['Currency'],
-                            fx_rate=fx_rate,
-                            bet=row['Bet'],
-                            win=row['Win'],
-                            bet_eur=row['Bet'] * fx_rate,
-                            win_eur=row['Win'] * fx_rate,
-                            number_of_spins=row['Number of Spins'],
-                            cash_bet=row['Cash bet'],
-                            bonus_bet=row['Bonus bet'],
-                            cash_win=row['Cash win'],
-                            bonus_win=row['Bonus win'],
-                            site_name=row['Site Name']
-                        )
-                        consolidated_data_entries.append(consolidated_data)
+                    consolidated_data = ConsolidatedData(
+                        date=row['Date'].date() if isinstance(row['Date'], pd.Timestamp) else row['Date'],
+                        username=row['Username'],
+                        account_id=row['Account_ID'],
+                        game_name=row['Game Name'],
+                        game_id=row['Game_ID'],
+                        currency=currency,
+                        fx_rate=fx_rate,
+                        bet=row['Bet'],
+                        win=row['Win'],
+                        bet_eur=row['Bet'] * fx_rate,
+                        win_eur=row['Win'] * fx_rate,
+                        number_of_spins=row['Number of Spins'],
+                        cash_bet=row['Cash bet'],
+                        bonus_bet=row['Bonus bet'],
+                        cash_win=row['Cash win'],
+                        bonus_win=row['Bonus win'],
+                        site_name=row['Site Name']
+                    )
+                    consolidated_data_entries.append(consolidated_data)
 
         # Bulk insert consolidated data
         try:
@@ -227,7 +237,7 @@ def calculate_total_summary():
 
             rtp = (date_summary[date]["total_win"] / date_summary[date]["total_bet"]) * 100 if date_summary[date]["total_bet"] > 0 else 0
             total_ggr_eur = date_summary[date]["total_bet"] - date_summary[date]["total_win"]
-            total_ggr_gbp = total_ggr_eur * rate_in_gbp
+            total_ggr_gbp = total_ggr_eur / rate_in_gbp
 
             # Log GGR calculation for GBP
             logger.info(
@@ -236,14 +246,14 @@ def calculate_total_summary():
             # Prepare the record
             summary_record = TotalSummaryData(
                 date=date,
-                total_bet=round(date_summary[date]["total_bet"], 2),
-                total_win=round(date_summary[date]["total_win"], 2),
+                total_bet=round(date_summary[date]["total_bet"], 3),
+                total_win=round(date_summary[date]["total_win"], 3),
                 reel_spins=date_summary[date]["reel_spins"],
                 social_spins=date_summary[date]["social_spins"],
                 total_spins=date_summary[date]["total_spins"],
-                rtp=round(rtp, 2),
-                ggr_eur=round(total_ggr_eur, 2),
-                ggr_gbp=round(total_ggr_gbp, 2)
+                rtp=round(rtp, 4),
+                ggr_eur=round(total_ggr_eur, 3),
+                ggr_gbp=round(total_ggr_gbp, 3)
             )
 
             # Check if a record for the date already exists
@@ -266,14 +276,14 @@ def calculate_total_summary():
 
             # Prepare metrics for response
             metrics = {
-                "total_bet": round(date_summary[date]["total_bet"], 2),
-                "total_win": round(date_summary[date]["total_win"], 2),
+                "total_bet": round(date_summary[date]["total_bet"], 3),
+                "total_win": round(date_summary[date]["total_win"], 3),
                 "total_spins": date_summary[date]["total_spins"],
                 "social_spins": date_summary[date]["social_spins"],
                 "reel_spins": date_summary[date]["reel_spins"],
-                "rtp": round(rtp, 2),
-                "ggr_eur": round(total_ggr_eur, 2),
-                "ggr_gbp": round(total_ggr_gbp, 2)
+                "rtp": round(rtp, 3),
+                "ggr_eur": round(total_ggr_eur, 3),
+                "ggr_gbp": round(total_ggr_gbp, 3)
             }
 
             logger.info(f"Total summary calculated successfully for {date}: {metrics}")
@@ -334,18 +344,18 @@ def load_latest_data():
 
         rtp = (total_win / total_bet) * 100 if total_bet > 0 else 0
         ggr_eur = total_bet - total_win
-        ggr_gbp = ggr_eur * rates.get('GBP', 1.0)
+        ggr_gbp = ggr_eur / rates.get('GBP', 1.0)
 
         metrics = {
             "latest_data": latest_data,  # Add the latest data date here
-            "total_bet": round(total_bet, 2),
-            "total_win": round(total_win, 2),
+            "total_bet": round(total_bet, 3),
+            "total_win": round(total_win, 3),
             "reel_spins": reel_spins,
             "social_spins": social_spins,
             "total_spins": total_spins,
-            "rtp": round(rtp, 2),
-            "ggr_eur": round(ggr_eur, 2),
-            "ggr_gbp": round(ggr_gbp, 2)
+            "rtp": round(rtp, 3),
+            "ggr_eur": round(ggr_eur, 3),
+            "ggr_gbp": round(ggr_gbp, 3)
         }
 
         logger.info(f"Latest data loaded successfully: {metrics}")
@@ -401,11 +411,23 @@ def upload_files(files):
         # Save data to database
         for _, row in merged_df.iterrows():
             currency = row['Currency']
-            fx_rate = rates.get(currency, 1.0)
+            site_name = row['Site Name'].strip()
+
+            # If currency is "FC" and Site Name is "Fortune Coins", change it to "FC."
+            if currency == "FC" and site_name == "Fortune Coins":
+                currency = "FC."
+
+            fx_rate = rates.get(currency, None)
 
             if fx_rate is None:
                 logger.error(f"Exchange rate for currency '{currency}' not found on date {row['Date']}. Setting fx_rate to 0.0")
                 fx_rate = 0.0
+
+            # Check conditions to skip adding the record
+            if row['Site Name'].strip() in ["ownlobby", "Netgaming( Internal )"] or row[
+                'Username'].upper().endswith("_OWN"):
+                logger.info(f"Skipping record for Username: {row['Username']}, Site Name: {row['Site Name']}")
+                continue
 
             existing_record = db.session.query(ConsolidatedData).filter_by(
                 date=row['Date'].date() if isinstance(row['Date'], pd.Timestamp) else row['Date'],
@@ -468,17 +490,17 @@ def calculate_metrics(consolidated_date):
 
         rtp = (total_win / total_bet) * 100 if total_bet > 0 else 0
         ggr_eur = total_bet - total_win
-        ggr_gbp = ggr_eur * rates.get('GBP', 1.0)
+        ggr_gbp = ggr_eur / rates.get('GBP', 1.0)
 
         metrics = {
-            "total_bet": round(total_bet, 2),
-            "total_win": round(total_win, 2),
+            "total_bet": round(total_bet, 3),
+            "total_win": round(total_win, 3),
             "reel_spins": reel_spins,
             "social_spins": social_spins,
             "total_spins": total_spins,
-            "rtp": round(rtp, 2),
-            "ggr_eur": round(ggr_eur, 2),
-            "ggr_gbp": round(ggr_gbp, 2)
+            "rtp": round(rtp, 3),
+            "ggr_eur": round(ggr_eur, 3),
+            "ggr_gbp": round(ggr_gbp, 3)
         }
 
         logger.info(f"Metrics calculated for date {consolidated_date}: {metrics}")
@@ -508,7 +530,7 @@ def calculate_total_summary_all_reports():
         for record in data:
             rate_in_gbp = rates.get(record.date, 1.0)  # Default rate to 1.0 if missing
             ggr_eur = record.bet_eur - record.win_eur
-            ggr_gbp = ggr_eur * rate_in_gbp
+            ggr_gbp = ggr_eur / rate_in_gbp
 
             totals["total_bet"] += record.bet_eur
             totals["total_win"] += record.win_eur
@@ -526,8 +548,8 @@ def calculate_total_summary_all_reports():
         rtp = (totals["total_win"] / totals["total_bet"]) * 100 if totals["total_bet"] > 0 else 0
 
         # Return final metrics
-        metrics = {key: round(value, 2) for key, value in totals.items()}
-        metrics["rtp"] = round(rtp,2)
+        metrics = {key: round(value, 3) for key, value in totals.items()}
+        metrics["rtp"] = round(rtp,3)
 
 
         logger.info(f"Total summary calculated successfully: {metrics}")
@@ -606,20 +628,20 @@ def add_missing_dates_data_to_total_summary():
             total_spins = social_spins + reel_spins
             rtp = (total_win / total_bet) * 100 if total_bet > 0 else 0
             ggr_eur = total_bet - total_win
-            ggr_gbp = ggr_eur * exchange_rate_gbp.rate
+            ggr_gbp = ggr_eur / exchange_rate_gbp.rate
 
 
             # Insert the missing date data into TotalSummaryData
             new_summary_data = TotalSummaryData(
                 date=missing_date,
-                total_bet=round(total_bet, 2),
-                total_win=round(total_win, 2),
+                total_bet=round(total_bet, 3),
+                total_win=round(total_win, 3),
                 total_spins=total_spins,
                 reel_spins=reel_spins,
                 social_spins=social_spins,
-                ggr_eur=round(ggr_eur, 2),
-                ggr_gbp=round(ggr_gbp, 2),
-                rtp=round(rtp, 2),
+                ggr_eur=round(ggr_eur, 3),
+                ggr_gbp=round(ggr_gbp, 3),
+                rtp=round(rtp, 3),
             )
             db.session.add(new_summary_data)
 
@@ -660,10 +682,10 @@ def get_total_summary_data():
             cumulative_metrics["ggr_eur"] += record.ggr_eur
             cumulative_metrics["ggr_gbp"] += record.ggr_gbp
 
-        cumulative_metrics["total_bet"] = round(cumulative_metrics["total_bet"], 2)
-        cumulative_metrics["total_win"] = round(cumulative_metrics["total_win"], 2)
-        cumulative_metrics["ggr_eur"] = round(cumulative_metrics["ggr_eur"], 2)
-        cumulative_metrics["ggr_gbp"] = round(cumulative_metrics["ggr_gbp"], 2)
+        cumulative_metrics["total_bet"] = round(cumulative_metrics["total_bet"], 3)
+        cumulative_metrics["total_win"] = round(cumulative_metrics["total_win"], 3)
+        cumulative_metrics["ggr_eur"] = round(cumulative_metrics["ggr_eur"], 3)
+        cumulative_metrics["ggr_gbp"] = round(cumulative_metrics["ggr_gbp"], 3)
 
         # Fetch total unique players for cumulative data
         cumulative_metrics["total_players"] = db.session.query(ConsolidatedData.account_id.distinct()) \
@@ -687,13 +709,13 @@ def get_total_summary_data():
             return {"error": f"No latest summary data found for date: {max_date}"}, 404
 
         latest_metrics.update({
-            "total_bet": round(total_summary_latest.total_bet, 2),
-            "total_win": round(total_summary_latest.total_win, 2),
+            "total_bet": round(total_summary_latest.total_bet, 3),
+            "total_win": round(total_summary_latest.total_win, 3),
             "total_spins": total_summary_latest.total_spins,
             "reel_spins": total_summary_latest.reel_spins,
             "social_spins": total_summary_latest.social_spins,
-            "ggr_eur": round(total_summary_latest.ggr_eur, 2),
-            "ggr_gbp": round(total_summary_latest.ggr_gbp, 2),
+            "ggr_eur": round(total_summary_latest.ggr_eur, 3),
+            "ggr_gbp": round(total_summary_latest.ggr_gbp, 3),
             "total_players": db.session.query(ConsolidatedData.account_id.distinct()) \
                 .filter(ConsolidatedData.date == max_date, ConsolidatedData.fx_rate > 0) \
                 .count()
@@ -701,10 +723,10 @@ def get_total_summary_data():
 
         # Calculate RTP for cumulative and latest metrics
         cumulative_metrics["rtp"] = round(
-            (cumulative_metrics["total_win"] / cumulative_metrics["total_bet"]) * 100 if cumulative_metrics["total_bet"] > 0 else 0, 2
+            (cumulative_metrics["total_win"] / cumulative_metrics["total_bet"]) * 100 if cumulative_metrics["total_bet"] > 0 else 0, 3
         )
         latest_metrics["rtp"] = round(
-            (latest_metrics["total_win"] / latest_metrics["total_bet"]) * 100 if latest_metrics["total_bet"] > 0 else 0, 2
+            (latest_metrics["total_win"] / latest_metrics["total_bet"]) * 100 if latest_metrics["total_bet"] > 0 else 0, 3
         )
 
         # Add date information

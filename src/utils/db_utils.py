@@ -2,6 +2,7 @@ import logging
 import requests
 import mysql.connector
 from mysql.connector import Error
+from datetime import datetime
 from src.models.db_models import ExchangeRate, db
 
 logger = logging.getLogger(__name__)
@@ -17,7 +18,7 @@ def fetch_exchange_rates(consolidate_date):
             logger.info(f"Rates for {consolidate_date} already exist in the database. Returning existing rates.")
         else:
             # If rates are not in the database, fetch from API
-            api_key = 'f9a3cb10586c03a09c827fcf952994c0'
+            api_key = 'fb7f6d6617215ab3ddcd1bf5bc37a2a9'
             base_currency = 'EUR'
             url = f"http://data.fixer.io/api/{consolidate_date}"
             params = {'access_key': api_key, 'base': base_currency}
@@ -58,10 +59,13 @@ def fetch_exchange_rates(consolidate_date):
         logger.error(f"Error fetching exchange rates: {e}")
         return {}
 
-
-# Insert or update social currencies in the database and return the converted rates
+#Insert social currencies to exchange rate table
 def insert_social_currencies(date_fetched):
     try:
+        # Convert date_fetched to a datetime object for comparison
+        effective_date = datetime(2025, 1, 29)
+        date_fetched_dt = datetime.strptime(date_fetched, "%Y-%m-%d")
+
         # Fetch USD to EUR conversion rate
         usd_to_eur_rate_entry = ExchangeRate.query.filter_by(currency='USD', date_fetched=date_fetched).first()
         if not usd_to_eur_rate_entry:
@@ -69,6 +73,7 @@ def insert_social_currencies(date_fetched):
             raise Exception("USD to EUR rate not found in the database.")
 
         usd_to_eur_rate = usd_to_eur_rate_entry.rate
+
         # Fetch BTC rate for conversion of mBTC
         btc_rate_entry = ExchangeRate.query.filter_by(currency='BTC', date_fetched=date_fetched).first()
         if not btc_rate_entry:
@@ -85,31 +90,43 @@ def insert_social_currencies(date_fetched):
             'YOH': 1.0,  # 1 YOH = 1 USD
             'GEM': 1.0,  # 1 GEM = 1 USD
             'BK.': 1.0,  # 1 BK. = 1 USD
-            'GHC': 0.001,  # 1 GHC = 0.001 EUR
             'GOC': 0,
-            'VBC': 0,
-            'GCC': 0,
-            'GLD': 0,
-            'GC': 0,
-            'GC.': 0,
+            'VBC': 0.0000000001,  # Directly in EUR
+            'GCC': 0.0000000001,  # Directly in EUR
+            'GLD': 0.0000000001,  # Directly in EUR
+            'GC': 0.0000000001,  # Directly in EUR
+            'GC.': 0.0000000001,  # Directly in EUR
             'TOK': 0,
-            'FTN': 0,
-            'USDT': 0,
-            'BT.': 0,  # 1 BT. = 0 USD
-            'mBTC': 0.000001,  # 1 mBTC = 0.000001 BTC
+            'USDT': 1.0,
+            'BT.': 0.0000000001,  # Directly in EUR
+            'mBTC': 0.001,  # 1 mBTC = 0.000001 BTC
             'FC': 1.0,  # 1 FC = 1 USD
+            'FC.': 0.01,  # 1 FC. = 0.01 USD
             'VSC': 1.0,  # 1 VSC = 1 USD
-            'WOW': 0.01  # 1 WOW = 0.01 USD
+            'WOW': 0.0000000001,  # Directly in EUR
+            'FTN' : 1.0
         }
+
+        # Apply the GHC rate change from Jan 29, 2025, onwards
+        if date_fetched_dt >= effective_date:
+            social_currencies['GHC'] = 1.0 # USD
+        else:
+            social_currencies['GHC'] = 0.001818  # EUR
 
         converted_rates = {}
 
         for currency, rate in social_currencies.items():
-            if currency == 'GHC':
+            if currency in ['VBC', 'GCC', 'GLD', 'GC', 'GC.', 'BT.', 'WOW', 'FTN']:
+                # Keep as is in EUR (these are already in EUR)
                 rate_in_eur = rate
+            elif currency == 'GHC':
+                # Convert 1 GHC = 1 USD to EUR only if date >= Jan 29, 2025
+                rate_in_eur = rate if date_fetched_dt < effective_date else rate * usd_to_eur_rate
             elif currency == 'mBTC':
                 # Convert mBTC to its BTC value using the fetched BTC rate
                 rate_in_eur = rate * btc_rate
+            elif currency == 'USDT':
+                rate_in_eur = rate / usd_to_eur_rate
             else:
                 rate_in_eur = rate * usd_to_eur_rate if rate > 0 else 0
 
@@ -134,6 +151,7 @@ def insert_social_currencies(date_fetched):
         logger.error(f"Error inserting social currencies: {e}")
         return {}
 
+
 # Database connection setup
 def get_db_connection():
     try:
@@ -141,8 +159,8 @@ def get_db_connection():
         connection = mysql.connector.connect(
             host='localhost',
             database='reportgenerator',
-            user='cheran',
-            password='Cheran@3334'
+            user='gamer',
+            password='Gamer@123'
         )
         if connection.is_connected():
             logger.info("Connected to MySQL database")
